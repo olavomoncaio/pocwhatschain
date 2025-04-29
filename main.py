@@ -17,5 +17,5 @@ class HelloRequest(BaseModel):
 
 @app.post("/hello")
 async def hello(req: HelloRequest):
-    resposta = "oi dan, merso e olavo, " + req.nome
+    resposta = "oi olavo, " + req.nome
     return {"resposta": resposta }
