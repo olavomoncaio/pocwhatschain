@@ -9,6 +9,7 @@ COPY . .
 
 # Instalar dependências
 RUN pip install --upgrade pip && pip install -r requirements.txt
+RUN pip install langchain-community langchain-core
 
 # Expor porta
 EXPOSE 8000
