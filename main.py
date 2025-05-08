@@ -5,17 +5,15 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import os
 from dotenv import load_dotenv
+from routes import process_message
+import logging
 
 load_dotenv()
 
 app = FastAPI()
+app.include_router(process_message.router)
 
-# Setup LangChain
-
-class HelloRequest(BaseModel):
-    nome: str
-
-@app.post("/hello")
-async def hello(req: HelloRequest):
-    resposta = "oi olavo, " + req.nome
-    return {"resposta": resposta }
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
