@@ -37,4 +37,5 @@ async def process_message(req: ProcessMessageRequest):
         }
 
     except Exception as e:
+        logger.error(f"Erro ao processar mensagem: {e}")
         raise HTTPException(status_code=500, detail=f"Ocorreu um erro ao processar a mensagem {str(e)}")
