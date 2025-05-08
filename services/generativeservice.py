@@ -17,5 +17,5 @@ async def send_message_openai(message: str):
             return data
 
     except Exception as e:
-        logger.info(f"Ocorreu um erro para enviar a requisição {e}")
+        logger.error(f"Ocorreu um erro para enviar a requisição {e}")
         return False

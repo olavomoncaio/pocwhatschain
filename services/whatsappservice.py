@@ -17,5 +17,5 @@ async def send_callback_whatsapp(message: str):
             return data
 
     except Exception as e:
-        logger.info(f"Enviando callback para whatsapp {message}")
+        logger.error(f"Enviando callback para whatsapp {message}")
         return False

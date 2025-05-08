@@ -20,7 +20,7 @@ async def process_message(req: ProcessMessageRequest):
     try:
         logger.info(f"Requisição recebida: {req.model_dump()}")
 
-        resposta = f"Eu não vou te responder sobre a mensagem, to sem dinheiro {req.message}"
+        resposta = f"This is an echo message: {req.message}"
 
         openIaResponse = await send_message_openai(req.message)
         whatsappcallback = await send_callback_whatsapp(openIaResponse)
