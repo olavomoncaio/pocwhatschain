@@ -29,13 +29,11 @@ async def process_message(req: ProcessMessageRequest):
 
         return {
             "interactionId": req.interactionId,
-            "sessionId": req.sessionId,
-            "hashId": req.hashId,
-            "message": req.message,
-            "resposta": resposta,
+            "respostaWhats": "Isso é um mock gerado pela api do mocky simulando o callback para o whats" + resposta,
             "responseIntegration": openIaResponse
         }
 
     except Exception as e:
         logger.error(f"Erro ao processar mensagem: {e}")
-        raise HTTPException(status_code=500, detail=f"Ocorreu um erro ao processar a mensagem {str(e)}")
+        raise BaseException(status_code=500, detail=f"Ocorreu um erro ao processar a mensagem {str(e)}")
+
