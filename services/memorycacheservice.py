@@ -10,7 +10,7 @@ redis_client = redis.Redis(
     decode_responses=True  # Converte automaticamente para string
 )
 
-async def getKey(key: str):
+def getKey(key: str):
     logger.info(f"Obtendo chave {key} do Redis")
     try:
         resultado = redis_client.get(key)  # Sem chaves {}
@@ -19,7 +19,7 @@ async def getKey(key: str):
         logger.error(f"Erro ao obter chave do Redis: {e}")
         return None  # Melhor que False para diferenciar de "não encontrado"
 
-async def setKey(key: str, value: str):
+def setKey(key: str, value: str):
     logger.info(f"Salvando chave {key} no Redis")
     try:
         redis_client.set(key, value)  # Sem chaves {}
