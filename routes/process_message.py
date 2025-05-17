@@ -13,6 +13,7 @@ class ProcessMessageRequest(BaseModel):
     interactionId: str
     sessionId: str
     hashId: str
+    userId: str
     message: Optional[str] = ""
 
 @router.post("/process_message")
