@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from typing import Optional
 from services.generativeservice import send_message_openai
 from services.whatsappservice import send_callback_whatsapp
+from services.memorycacheservice import getKey, setKey
 import logging
 
 logger = logging.getLogger(__name__)
@@ -32,6 +33,40 @@ async def process_message(req: ProcessMessageRequest):
             "interactionId": req.interactionId,
             "respostaWhats": "Isso é um mock gerado pela api do mocky simulando o callback para o whats" + resposta,
             "responseIntegration": openIaResponse
+        }
+
+    except Exception as e:
+        logger.error(f"Erro ao processar mensagem: {e}")
+        raise BaseException(status_code=500, detail=f"Ocorreu um erro ao processar a mensagem {str(e)}")
+    
+@router.post("/getKey")
+async def getKeyCache(key: str):
+    try:
+        logger.info(f"Requisição recebida getKey: {key}")
+
+        redisResult = getKey(key)
+    
+        logger.info(f"Processamento finalizado com sucesso para salvar chave")
+
+        return {
+            "resultado": redisResult
+        }
+
+    except Exception as e:
+        logger.error(f"Erro ao processar mensagem: {e}")
+        raise BaseException(status_code=500, detail=f"Ocorreu um erro ao processar a mensagem {str(e)}")
+    
+@router.post("/setKey")
+async def setKeyCache(key: str, value: str):
+    try:
+        logger.info(f"Requisição recebida setKey: {key}")
+
+        redisResult = setKey(key, value)
+    
+        logger.info(f"Processamento finalizado setar chave")
+
+        return {
+            "resultado": redisResult
         }
 
     except Exception as e:
