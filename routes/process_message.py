@@ -20,7 +20,11 @@ async def process_message(req: ProcessMessageRequest):
         logger.info(f"Requisição recebida: {req.model_dump()}")
 
         memory = getKey(req.numero_cliente)
-        newMemory = memory + ";" + req.message
+        if memory is None:
+            newMemory = req.message
+        else:
+            newMemory = memory + ";" + req.message
+            
         redisResult = setKey(req.numero_cliente, newMemory)
 
         req.message = "Essa é a memória das outras mensagens enviadas pelo usuário separadas por ;: " + memory + ". Essa é a mensagem atual do usuário: " + req.message if memory else req.message
