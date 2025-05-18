@@ -12,9 +12,7 @@ router = APIRouter()
 
 class ProcessMessageRequest(BaseModel):
     interactionId: str
-    sessionId: str
-    hashId: str
-    userId: str
+    numero_cliente: str
     message: Optional[str] = ""
 
 @router.post("/process_message")
@@ -22,17 +20,17 @@ async def process_message(req: ProcessMessageRequest):
     try:
         logger.info(f"Requisição recebida: {req.model_dump()}")
 
-        resposta = f"This is an echo message: {req.message}"
-
         openIaResponse = await send_message_openai(req.message)
-        whatsappcallback = await send_callback_whatsapp(openIaResponse)
 
         logger.info(f"Processamento finalizado com sucesso para a interação {req.interactionId}")
 
         return {
-            "interactionId": req.interactionId,
-            "respostaWhats": "Isso é um mock gerado pela api do mocky simulando o callback para o whats" + resposta,
-            "responseIntegration": openIaResponse
+            "resposta": 
+            {
+                "interactionId": req.interactionId,
+                "resposta_ia": openIaResponse,
+                "numero_cliente:": req.numero_cliente
+            }      
         }
 
     except Exception as e:

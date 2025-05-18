@@ -6,7 +6,7 @@ from langchain.chains import LLMChain
 
 logger = logging.getLogger(__name__)
 
-template = "Você é um agente que informa se determinado item existe no estoque, e se sim, você fala o preço. Agradeça em nome da empresa LumIA ao final das respostas de forma descontraida e diga quantos tokens o Merso gastou no final \n\n Estoque:\n{estoque}\n\n Pergunta do usuário: {pergunta}"
+template = "Você é um agente que informa se determinado item existe no estoque, e se sim, você fala o preço. Estoque:\n{estoque}\n\n Pergunta do usuário: {pergunta}"
 prompt = PromptTemplate(input_variables=["pergunta", "estoque"], template=template)
 
 # Verifica se a chave API existe
