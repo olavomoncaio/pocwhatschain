@@ -2,7 +2,6 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 from typing import Optional
 from services.generativeservice import send_message_openai
-from services.whatsappservice import send_callback_whatsapp
 from services.memorycacheservice import getKey, setKey
 import logging
 
@@ -20,7 +19,12 @@ async def process_message(req: ProcessMessageRequest):
     try:
         logger.info(f"Requisição recebida: {req.model_dump()}")
 
-        openIaResponse = await send_message_openai(req.message)
+        memory = getKey(req.numero_cliente)
+        redisResult = setKey(req.numero_cliente, memory + ";" + req.message)
+
+        req.message = "Essa é a memória das outras mensagens enviadas pelo usuário separadas por ;: " + memory + ". Essa é a mensagem atual do usuário: " + req.message if memory else req.message
+
+        openIaResponse = await send_message_openai(req.message)       
 
         logger.info(f"Processamento finalizado com sucesso para a interação {req.interactionId}")
 
