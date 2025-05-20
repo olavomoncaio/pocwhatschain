@@ -44,7 +44,7 @@ async def send_message_openai(message: str):
     - Inhame (kg) - R$ 6,40
     - Beterraba (kg) - R$ 4,30
     - Quiabo (kg) - R$ 7,10
-
+    - Felicidade - Não tem preço
     """
 
     # Adicionado await e usando chain.arun() para chamadas assíncronas
