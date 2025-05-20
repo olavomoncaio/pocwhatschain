@@ -15,9 +15,11 @@ async def send_callback_whatsapp(resposta: str, phone: str):
                 "phone": phone,
                 "message": resposta
             }, headers={
-                "Authorization": f"Bearer {token}",
+                "Client-Token": f"{token}",
                 "Content-Type": "application/json"
             })
+        
+        return True
 
     except Exception as e:
         logger.error(f"Erro ao enviar callback para whatsapp {phone}")
