@@ -34,7 +34,7 @@ SESSION_ID = "unique_session_id"  # Identificador único para armazenar/recupera
                                   # A composição da chave fica "message_store:<unique_session_id>
 
 # Função para limpar a memória
-def clear_memory():
+def clear_memory(): 
     global memory, redis_chat_history
     redis_chat_history.clear()
     memory = ConversationBufferMemory(
