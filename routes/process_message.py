@@ -25,7 +25,7 @@ class ZapiWebhookModel(BaseModel):
     data: ZapiWebhookData
 
 @router.post("/process_message")
-async def process_message(request: ZapiWebhookModel):
+async def process_message(request: Request):
     try:
         logger.info(f"Requisição recebida: {request}")
 
