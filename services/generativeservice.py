@@ -3,40 +3,12 @@ import os
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.memory import ConversationBufferMemory, RedisChatMessageHistory
+from langchain.memory import ConversationBufferMemory
 from services.memorycacheservice import getRedisChatHistoryObject
 from langchain_openai import ChatOpenAI
+from services.memorycacheservice import getMemoryById
 
 logger = logging.getLogger(__name__)
-
-template = "Você é um agente que informa se determinado item existe no estoque, e se sim, você fala o preço. Estoque:\n{estoque}\n\n Pergunta do usuário: {pergunta}"
-prompt = PromptTemplate(input_variables=["pergunta", "estoque"], template=template)
-
-# Verifica se a chave API existe
-
-
-async def send_message_openai(message: str):
-    logger.info(f"Enviando requisição para openia {message}")
-
-    ##############
-    # LLM e Prompt
-    llm = ChatOpenAI(model="gpt-4.1", temperature=0.5)
-    llm_utils = ChatOpenAI(model="gpt-4.1", temperature=0.0)
- 
-    promtp = getPrompt()
-
-
-
-
-
-
-    ###########
-
-    openai_api_key = os.getenv("OPENAI_API_KEY")
-    if not openai_api_key:
-        raise ValueError("OPENAI_API_KEY não encontrada nas variáveis de ambiente")
-
-    return resposta
 
 def getPrompt():
     prompt = ChatPromptTemplate.from_messages([
@@ -156,7 +128,7 @@ def chainWelcomeBack(client_id: str):
 
     return chain_welcomeback
 
-def chain(llm: ChatOpenAI, memory: ConversationBufferMemory): 
+def chainGeneral(llm: ChatOpenAI, memory: ConversationBufferMemory): 
     chain = LLMChain(
         llm=llm,
         prompt=getPrompt(),
@@ -194,10 +166,11 @@ def classify_client_response(response_text):
     
     return classification.content.lower().strip()
 
-def general_response(user_input: str, llm: ChatOpenAI, memory: ConversationBufferMemory):
-    chain = getChain(llm, memory)
+def general_response(client_id: str, user_input: str):
+    llm = ChatOpenAI(model="gpt-4.1", temperature=0.5)
+    memory = getMemoryById(client_id)
 
+    chain = chainGeneral(llm, memory)
     response = chain.invoke({"input": user_input})
-    print("Resposta:", response["text"])
-    first_interaction = False
-    return response
+
+    return response["text"]

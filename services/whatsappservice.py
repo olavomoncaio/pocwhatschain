@@ -4,18 +4,23 @@ import os
 
 logger = logging.getLogger(__name__)
 
-async def send_callback_whatsapp(message: str):
-    logger.info(f"Enviando callback para whatsapp {message}")
-    url = os.getenv("API_MOCK")
+async def send_callback_whatsapp(resposta: str, phone: str):
+    logger.info(f"Enviando callback para whatsapp {phone}")
+    url = os.getenv("ZAPI_URL")
+    token = os.getenv("ZAPI_TOKEN")
 
     try:
         async with httpx.AsyncClient() as client:
-            response = await client.get(url)
-            response.raise_for_status()
-            data = response.json()
-
-            return data
+            await client.post(url, json={
+                "phone": phone,
+                "message": resposta
+            }, headers={
+                "Client-Token": f"{token}",
+                "Content-Type": "application/json"
+            })
+        
+        return True
 
     except Exception as e:
-        logger.error(f"Enviando callback para whatsapp {message}")
+        logger.error(f"Erro ao enviar callback para whatsapp {phone}")
         return False
