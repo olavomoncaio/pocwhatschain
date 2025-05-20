@@ -11,32 +11,45 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
-class ZapiWebhookData(BaseModel):
-    type: str
-    from_: str = Field(alias="from")
-    fromName: Optional[str]
-    message: Optional[str]
-    messageId: Optional[str]
-    timestamp: Optional[int]
-  
-class ZapiWebhookModel(BaseModel):
-    event: str
+class TextMessage(BaseModel):
+    message: str
+
+class ReceivedCallbackModel(BaseModel):
+    isStatusReply: bool
+    chatLid: str
+    connectedPhone: str
+    waitingMessage: bool
+    isEdit: bool
+    isGroup: bool
+    isNewsletter: bool
     instanceId: str
-    timestamp: int
-    data: ZapiWebhookData
+    messageId: str
+    phone: str
+    fromMe: bool
+    momment: int
+    status: str
+    chatName: str
+    senderPhoto: Optional[str] = None
+    senderName: str
+    photo: Optional[str] = None
+    broadcast: bool
+    participantLid: Optional[str] = None
+    forwarded: bool
+    type: str
+    fromApi: bool
+    text: TextMessage
 
 @router.post("/process_message")
-async def process_message(request: Request):
+async def process_message(request: ReceivedCallbackModel):
     try:
-        payload = await request.json()
-        logger.info("Payload recebido:\n%s", json.dumps(payload, indent=2, ensure_ascii=False))
+        logger.info("Payload recebido:", request.model_dump())
 
-        # openIaResponse = await send_message_openai(request.data.message) 
-        # callbackResult = await send_callback_whatsapp(openIaResponse, request.data.from_)      
+        openIaResponse = await send_message_openai(request.text.message) 
+        callbackResult = await send_callback_whatsapp(openIaResponse, request.phone)      
 
         resultado = {
                 "resposta_ia": request,
-                "callback_result": payload
+                "callback_result": callbackResult
             }    
 
         logger.info(f"Processamento finalizado com sucesso para a interação {resultado}")
