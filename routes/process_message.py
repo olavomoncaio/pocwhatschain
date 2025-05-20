@@ -27,7 +27,7 @@ class ZapiWebhookModel(BaseModel):
 @router.post("/process_message")
 async def process_message(request: Request):
     try:
-        logger.info(f"Requisição recebida: {request}")
+        logger.info(f"Requisição recebida: {request.model_dump()}")
 
         openIaResponse = await send_message_openai(request.data.message) 
         callbackResult = await send_callback_whatsapp(openIaResponse, request.data.from_)      
