@@ -31,13 +31,12 @@ async def process_message(request: Request):
         payload = await request.json()
         logger.info("Payload recebido:\n%s", json.dumps(payload, indent=2, ensure_ascii=False))
 
-        openIaResponse = await send_message_openai(request.data.message) 
-        callbackResult = await send_callback_whatsapp(openIaResponse, request.data.from_)      
+        # openIaResponse = await send_message_openai(request.data.message) 
+        # callbackResult = await send_callback_whatsapp(openIaResponse, request.data.from_)      
 
         resultado = {
-                "resposta_ia": openIaResponse,
-                "numero_cliente:": request.data.from_,
-                "callback_result": callbackResult
+                "resposta_ia": request,
+                "callback_result": payload
             }    
 
         logger.info(f"Processamento finalizado com sucesso para a interação {resultado}")
