@@ -1,0 +1,76 @@
+{
+    "products": [
+      {
+        "code": "001",
+        "description": "Aveia em flocos - Excelente fonte de fibras solúveis e proteínas, ideal para o controle do colesterol e preparo de receitas saudáveis.",
+        "price": 12.50,
+        "measure_type": "kg",
+        "stock": 50
+      },
+      {
+        "code": "002",
+        "description": "Hibisco desidratado - Flor rica em antioxidantes e propriedades diuréticas, perfeita para infusões que ajudam no equilíbrio metabólico.",
+        "price": 36.00,
+        "measure_type": "kg",
+        "stock": 30
+      },
+      {
+        "code": "003",
+        "description": "Castanha-do-Pará - Alimento rico em selênio e gorduras boas, essencial para a saúde do sistema nervoso e imunológico.",
+        "price": 70.00,
+        "measure_type": "kg",
+        "stock": 20
+      },
+      {
+        "code": "004",
+        "description": "Berberina - Suplemento natural com propriedades anti-inflamatórias e metabólicas, recomendado para suporte à saúde cardiovascular e controle glicêmico.",
+        "price": 85.00,
+        "measure_type": "unidade",
+        "stock": 15
+      },
+      {
+        "code": "005",
+        "description": "Desinchá - Mistura de ervas como chá-verde, hortelã e carqueja, conhecida por promover o bem-estar e auxiliar na digestão. Contém 30 sachês.",
+        "price": 29.90,
+        "measure_type": "unidade",
+        "stock": 40
+      },
+      {
+        "code": "006",
+        "description": "Própolis em gotas - Reforço natural para o sistema imunológico, com propriedades antimicrobianas e antioxidantes. Frasco de 50 ml.",
+        "price": 25.00,
+        "measure_type": "unidade",
+        "stock": 25
+      },
+      {
+        "code": "007",
+        "description": "Mel puro - Fonte natural de energia com propriedades antibacterianas, ideal para adoçar chás e receitas de forma saudável. Vendido por litro.",
+        "price": 35.00,
+        "measure_type": "litro",
+        "stock": 50
+      },
+      {
+        "code": "008",
+        "description": "Leite de amêndoa - Bebida vegetal sem lactose, leve e nutritiva, perfeita para substituir o leite em dietas restritivas.",
+        "price": 18.00,
+        "measure_type": "litro",
+        "stock": 40
+      },
+      {
+        "code": "009",
+        "description": "Pão integral - Rico em fibras e nutrientes, ideal para um café da manhã equilibrado e uma alimentação saudável.",
+        "price": 19.80,
+        "measure_type": "kg",
+        "stock": 30
+      },
+      {
+        "code": "010",
+        "description": "Chá de cavalinha - Planta diurética com propriedades anti-inflamatórias, conhecida por auxiliar no combate à retenção de líquidos.",
+        "price": 150.00,
+        "measure_type": "kg",
+        "stock": 25
+      }
+    ]
+  }
+  
+  
