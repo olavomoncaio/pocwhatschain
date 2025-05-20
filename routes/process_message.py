@@ -1,3 +1,4 @@
+import json
 from fastapi import APIRouter, Request
 from pydantic import BaseModel, Field
 from typing import Optional
@@ -27,7 +28,8 @@ class ZapiWebhookModel(BaseModel):
 @router.post("/process_message")
 async def process_message(request: Request):
     try:
-        logger.info(f"Requisição recebida: {request.model_dump()}")
+        payload = await request.json()
+        logger.info("Payload recebido:\n%s", json.dumps(payload, indent=2, ensure_ascii=False))
 
         openIaResponse = await send_message_openai(request.data.message) 
         callbackResult = await send_callback_whatsapp(openIaResponse, request.data.from_)      
