@@ -1,5 +1,5 @@
-from fastapi import APIRouter
-from pydantic import BaseModel
+from fastapi import APIRouter, Request
+from pydantic import BaseModel, Field
 from typing import Optional
 from services.generativeservice import chainWelcomeBack, classify_client_response, chainPlaceAnOrder, general_response
 from services.memorycacheservice import verifyPreviousConversations, clear_memory
