@@ -2,9 +2,10 @@ from fastapi import APIRouter, Request
 from pydantic import BaseModel, Field
 from typing import Optional
 from services.generativeservice import chainWelcomeBack, classify_client_response, chainPlaceAnOrder, general_response
-from services.memorycacheservice import verifyPreviousConversations, clear_memory
+from services.memorycacheservice import verifyPreviousConversations, clear_memory, getKey
 from services.whatsappservice import send_callback_whatsapp
 import logging
+import json
 
 logger = logging.getLogger(__name__)
 
@@ -55,6 +56,41 @@ async def process_message(req: ReceivedCallbackModel):
         }
 
         return resultado
+
+    except Exception as e:
+        logger.error(f"Erro ao processar mensagem: {e}")
+        raise BaseException(status_code=500, detail=f"Ocorreu um erro ao processar a mensagem {str(e)}")
+    
+
+@router.post("/getKey")
+async def getKeyCache(key: str):
+    try:
+        logger.info(f"Requisição recebida getKey: {key}")
+
+        redisResult = getKey(key)
+    
+        logger.info(f"Processamento finalizado com sucesso para salvar chave")
+
+        return {
+            "resultado": redisResult
+        }
+
+    except Exception as e:
+        logger.error(f"Erro ao processar mensagem: {e}")
+        raise BaseException(status_code=500, detail=f"Ocorreu um erro ao processar a mensagem {str(e)}")
+
+@router.post("/process_message_tests")
+async def process_message(request: Request):
+    try:
+        payload = await request.json()
+        logger.info("Payload recebido:\n%s", json.dumps(payload, indent=2, ensure_ascii=False))
+
+        resultado = {
+            "resposta_ia": request,
+            "callback_result": payload
+        }    
+
+        logger.info(f"Processamento finalizado com sucesso para a interação {resultado}")
 
     except Exception as e:
         logger.error(f"Erro ao processar mensagem: {e}")
