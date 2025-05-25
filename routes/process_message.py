@@ -45,7 +45,7 @@ async def process_message(req: ReceivedCallbackModel):
     try:
         logger.info(f"Iniciando processo {datetime.now()}")
         resposta = ""
-        phone_default = "119928367716" ##telefone da loja
+        phone_default = "5511982158891" ##telefone da loja
         clientKey = f"{phone_default}:{req.phone}"
 
         logger.info(f"Requisição recebida: {req.model_dump()}")
