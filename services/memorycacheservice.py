@@ -1,6 +1,7 @@
 import logging
 from langchain.memory import ConversationBufferMemory, RedisChatMessageHistory
 import redis
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +24,9 @@ def clear_memory(client_id: str):
     return memory
 
 def getMemoryById(client_id: str):
+    logger.info(f"Obtendo histórico Redis {datetime.now()}")
     redis_chat_history = getRedisChatHistoryObject(client_id)
+    logger.info(f"Histórico obtido Redis {datetime.now()}")
 
     memory = ConversationBufferMemory(
         memory_key="chat_history",
@@ -43,10 +46,9 @@ def getRedisChatHistoryObject(client_id: str):
     return redis_chat_history
 
 
-## para testes
 def getKey(key: str):
     redis_client = redis.Redis  (
-        host="localhost",  # No Docker Compose, use "redis" como host
+        host="localhost", 
         port=6379
     )
     
@@ -56,4 +58,18 @@ def getKey(key: str):
         return resultado
     except Exception as e:
         logger.error(f"Erro ao obter chave do Redis: {e}")
-        return None  # Melhor que False para diferenciar de "não encontrado"
+        return None  
+    
+def setKey(key: str, value: str):
+    redis_client = redis.Redis  (
+        host="localhost", 
+        port=6379
+    )
+     
+    logger.info(f"Salvando chave {key} no Redis")
+    try:
+        redis_client.set(key, value)  
+        return True
+    except Exception as e:
+        logger.error(f"Erro ao salvar no Redis: {e}")
+        return False

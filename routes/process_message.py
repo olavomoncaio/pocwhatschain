@@ -1,11 +1,12 @@
+import json
 from fastapi import APIRouter, Request
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from typing import Optional
-from services.generativeservice import chainWelcomeBack, classify_client_response, chainPlaceAnOrder, general_response
-from services.memorycacheservice import verifyPreviousConversations, clear_memory, getKey
+from services.generativeservice import general_response
+from services.memorycacheasyncservice import get_key
 from services.whatsappservice import send_callback_whatsapp
 import logging
-import json
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -42,19 +43,23 @@ class ReceivedCallbackModel(BaseModel):
 @router.post("/process_message")
 async def process_message(req: ReceivedCallbackModel):
     try:
+        logger.info(f"Iniciando processo {datetime.now()}")
         resposta = ""
+        phone_default = "119928367716" ##telefone da loja
+        clientKey = f"{phone_default}:{req.phone}"
+
         logger.info(f"Requisição recebida: {req.model_dump()}")
 
-        resposta = general_response(req.phone, req.text.message)      
-
+        resposta = general_response(clientKey, req.text.message, phone_default)      
         callbackResult = await send_callback_whatsapp(resposta, req.phone)
-        logger.info(f"Processamento finalizado com sucesso para o cliente {req.phone} - CallbackResult: {callbackResult} - Resposta: {resposta}")
+        logger.info(f"Processamento finalizado com sucesso para o cliente {req.phone} - Resposta: {resposta} - ClientKey: {clientKey}")
 
         resultado = {
             "status": callbackResult,
             "message": resposta
         }
 
+        logger.info(f"Finalizando processo {datetime.now()}")
         return resultado
 
     except Exception as e:
@@ -67,9 +72,9 @@ async def getKeyCache(key: str):
     try:
         logger.info(f"Requisição recebida getKey: {key}")
 
-        redisResult = getKey(key)
+        redisResult = get_key(key)
     
-        logger.info(f"Processamento finalizado com sucesso para salvar chave")
+        logger.info(f"Processamento finalizado com sucesso para obter chave")
 
         return {
             "resultado": redisResult
@@ -80,7 +85,7 @@ async def getKeyCache(key: str):
         raise BaseException(status_code=500, detail=f"Ocorreu um erro ao processar a mensagem {str(e)}")
 
 @router.post("/process_message_tests")
-async def process_message(request: Request):
+async def process_message_test(request: Request):
     try:
         payload = await request.json()
         logger.info("Payload recebido:\n%s", json.dumps(payload, indent=2, ensure_ascii=False))

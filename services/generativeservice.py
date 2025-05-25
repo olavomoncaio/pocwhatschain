@@ -1,19 +1,32 @@
 import logging
-import os
-from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.memory import ConversationBufferMemory
-from services.memorycacheservice import getRedisChatHistoryObject
 from langchain_openai import ChatOpenAI
-from services.memorycacheservice import getMemoryById
+from services.memorycacheasyncservice import get_key, get_memory_by_id
+from services.estoqueservice import EstoqueService
+from models.models import get_db
+from utils.estoqueformatter import format_estoque
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
-def getPrompt():
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", 
-        """Você é um assistente virtual de um comércio especializado em vendas via WhatsApp. Seu objetivo é oferecer um atendimento prático, objetivo e descontraído. Suas responsabilidades incluem: 
+def getPrompt(phone_enterprise: str):
+    logger.info(f"Obtendo estoque Redis {datetime.now()}")
+    estoqueKey = f"estoque:{phone_enterprise}"
+    estoque = get_key(estoqueKey)
+    logger.info(f"Estoque obtido Redis {datetime.now()}")
+
+    if estoque is None:
+        logger.info(f"Obtendo estoque postgreSQL {datetime.now()}")
+        db = next(get_db())
+        estoque_service = EstoqueService(db) 
+        estoque = estoque_service.obter_estoque(phone_enterprise) 
+        logger.info(f"Estoque obtido PostgreSQL {datetime.now()}")
+    
+    estoqueFormatted = format_estoque(estoque)
+
+    systemPromptText = f"""Você é um assistente virtual de um comércio especializado em vendas via WhatsApp. Seu objetivo é oferecer um atendimento prático, objetivo e descontraído. Suas responsabilidades incluem: 
             - Restringir respostas aos produtos disponíveis, respondendo prioritariamente sobre o valor.
             - Caso o cliente pergunte sobre informações do produto, ofereça orientações claras e resumidas. 
             - Utilize a descrição dos produtos para sugerí-los caso o cliente pergunte sobre produtos que ajudem em questões de saúde, porém, caso o produto já esteja nos ítens da lista de compras, informar o cliente.
@@ -23,75 +36,11 @@ def getPrompt():
             - Gerar orçamentos completos com base nos itens solicitados.
             - Somente quando o cliente informar que quer fechar a compra, informe que entraremos em contato para definir os detalhes do pagamento e da entrega.
             - Você tem à sua disposição as seguintes informações detalhadas sobre os produtos disponíveis:
-                - Aveia em flocos
-                    Código: 001
-                    Descrição: Excelente fonte de fibras solúveis e proteínas, ideal para o controle do colesterol e preparo de receitas saudáveis.
-                    Preço: R$ 12,50 por kg
-                    Estoque: 50 kg
-                    Permite fracionamento: sim
+                {estoqueFormatted}"""  
 
-                - Hibisco desidratado
-                    Código: 002
-                    Descrição: Flor rica em antioxidantes e propriedades diuréticas, perfeita para infusões que ajudam no equilíbrio metabólico.
-                    Preço: R$ 36,00 por kg
-                    Estoque: 30 kg
-                    Permite fracionamento: sim
-
-                - Castanha-do-Pará
-                    Código: 003
-                    Descrição: Alimento rico em selênio e gorduras boas, essencial para a saúde do sistema nervoso e imunológico.
-                    Preço: R$ 70,00 por kg
-                    Estoque: 20 kg
-                    Permite fracionamento: sim
-
-                - Berberina
-                    Código: 004
-                    Descrição: Suplemento natural com propriedades anti-inflamatórias e metabólicas, recomendado para suporte à saúde cardiovascular e controle glicêmico.
-                    Preço: R$ 85,00 por unidade
-                    Estoque: 15 unidades
-                    Permite fracionamento: não
-
-                - Desinchá
-                    Código: 005
-                    Descrição: Mistura de ervas como chá-verde, hortelã e carqueja, conhecida por promover o bem-estar e auxiliar na digestão. Contém 30 sachês.
-                    Preço: R$ 29,90 por unidade
-                    Estoque: 40 unidades
-                    Permite fracionamento: não
-
-                - Própolis em gotas
-                    Código: 006
-                    Descrição: Reforço natural para o sistema imunológico, com propriedades antimicrobianas e antioxidantes. Frasco de 50 ml.
-                    Preço: R$ 25,00 por unidade
-                    Estoque: 25 unidades
-                    Permite fracionamento: não
-
-                - Mel puro
-                    Código: 007
-                    Descrição: Fonte natural de energia com propriedades antibacterianas, ideal para adoçar chás e receitas de forma saudável. Vendido por litro.
-                    Preço: R$ 35,00 por litro
-                    Estoque: 50 litros
-                    Permite fracionamento: não
-
-                - Leite de amêndoa
-                    Código: 008
-                    Descrição: Bebida vegetal sem lactose, leve e nutritiva, perfeita para substituir o leite em dietas restritivas.
-                    Preço: R$ 18,00 por litro
-                    Estoque: 40 litros
-                    Permite fracionamento: não
-
-                - Pão integral
-                    Código: 009
-                    Descrição: Rico em fibras e nutrientes, ideal para um café da manhã equilibrado e uma alimentação saudável.
-                    Preço: R$ 19,80 por kg
-                    Estoque: 30 kg
-                    Permite fracionamento: não
-
-                - Chá de cavalinha
-                    Código: 010
-                    Descrição: Planta diurética com propriedades anti-inflamatórias, conhecida por auxiliar no combate à retenção de líquidos.
-                    Preço: R$ 150,00 por kg
-                    Estoque: 25 kg
-                    Permite fracionamento: sim"""),
+    prompt = ChatPromptTemplate.from_messages([
+       ("system", 
+        systemPromptText),
         MessagesPlaceholder(variable_name="chat_history", n_messages=20),
         ("human", "{input}")
     ])
@@ -121,28 +70,10 @@ def getPromptPlaceAnOrder():
     ])
     return prompt_placeanorder
 
-def chainWelcomeBack(client_id: str):
-    prompt_welcomeback = getPromptWelcome()
-    redis_chat_history = getRedisChatHistoryObject(client_id)
-
-    memory = ConversationBufferMemory(
-        memory_key="chat_history",
-        return_messages=True,
-        chat_memory=redis_chat_history
-    )
-
-    chain_welcomeback = LLMChain(
-        llm=ChatOpenAI(model="gpt-4.1", temperature=0.5),
-        prompt=prompt_welcomeback,
-        memory=memory
-    )
-
-    return chain_welcomeback
-
-def chainGeneral(llm: ChatOpenAI, memory: ConversationBufferMemory): 
+def chainGeneral(llm: ChatOpenAI, memory: ConversationBufferMemory, phone_enterprise: str): 
     chain = LLMChain(
         llm=llm,
-        prompt=getPrompt(),
+        prompt=getPrompt(phone_enterprise),
         memory=memory
     )
 
@@ -177,11 +108,13 @@ def classify_client_response(response_text):
     
     return classification.content.lower().strip()
 
-def general_response(client_id: str, user_input: str):
+def general_response(client_id: str, user_input: str, phone_enterprise: str):
     llm = ChatOpenAI(model="gpt-4.1", temperature=0.5)
-    memory = getMemoryById(client_id)
+    memory = get_memory_by_id(client_id)
 
-    chain = chainGeneral(llm, memory)
+    chain = chainGeneral(llm, memory, phone_enterprise)
+    logger.info(f"Invocando Chain {datetime.now()}")
     response = chain.invoke({"input": user_input})
+    logger.info(f"Finalizando Chain {datetime.now()}")
 
     return response["text"]
