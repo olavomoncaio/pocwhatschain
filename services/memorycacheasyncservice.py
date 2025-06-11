@@ -16,6 +16,7 @@ REDIS_CONFIG = {
     "max_connections": 10
 }
 
+
 _redis_pool = redis.ConnectionPool(**REDIS_CONFIG)
  
 def get_redis_connection() -> redis.Redis:
