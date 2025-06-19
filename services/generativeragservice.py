@@ -1,14 +1,13 @@
 import logging
 from typing import Optional
-from memorycacheasyncservice import get_key, get_memory_by_id
-from vectordbservice import get_retriever, vectordb_connect, get_vectorstore
+from services.memorycacheasyncservice import get_key, get_memory_by_id
+from services.vectordbservice import get_retriever, vectordb_connect, get_vectorstore
 from langchain_community.vectorstores import Weaviate
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI
 from langchain.chains import LLMChain
 import os
-import weaviate
 from datetime import datetime
 
 logger = logging.getLogger(__name__)

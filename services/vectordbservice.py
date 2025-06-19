@@ -4,15 +4,14 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.chains import LLMChain
 from dotenv import load_dotenv
 import os
-import weaviate
 
 load_dotenv()
 
 ## Conecta com o banco vetorial Weavite
 def vectordb_connect():
     # Conectar ao Weaviate
-    client = weaviate.Client(
-        "http://localhost:8080",  # URL como string
+    client = Weaviate.Client(
+        os.getenv("RAILWAY"),  # URL como string
         additional_headers={"X-OpenAI-Api-Key": os.getenv("OPENAI_API_KEY")}
     )
     return client
