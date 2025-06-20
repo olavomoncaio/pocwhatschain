@@ -10,8 +10,10 @@ load_dotenv()
 
 # Configuração do Weaviate v3
 client = weaviate.Client(
-    url="http://localhost:8080",
-    additional_headers={"X-OpenAI-Api-Key": os.getenv("OPENAI_API_KEY")}
+    url=os.getenv("RAILWAYWEAVITE"),  # URL como string
+    additional_headers={
+        "X-OpenAI-Api-Key": os.getenv("OPENAI_API_KEY")
+    }
 )
 
 # Carregar documentos (seu código existente)
@@ -36,7 +38,7 @@ print(f"Chunks gerados: {len(docs)}")
 # Verificar e criar schema de forma mais robusta
 schema = client.schema.get()
 class_names = [cls["class"] for cls in schema["classes"]]
-index_name = "MyIndex"
+index_name = "EasyAI"
 
 if index_name not in class_names:
     class_obj = {
@@ -44,7 +46,7 @@ if index_name not in class_names:
         "vectorizer": "text2vec-openai",
         "moduleConfig": {
             "text2vec-openai": {
-                "model": "text-embedding-ada-002",
+                "model": "text-embedding-3-small",
                 "type": "text"
             }
         },
@@ -71,7 +73,7 @@ try:
     vectorstore = Weaviate.from_documents(
         client=client,
         documents=docs,
-        embedding=OpenAIEmbeddings(model="text-embedding-ada-002"),
+        embedding=OpenAIEmbeddings(model="text-embedding-3-small"),
         index_name=index_name,
         text_key="texto"
     )

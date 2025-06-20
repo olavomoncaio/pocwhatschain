@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "API_MOCK": "https://run.mocky.io/v3/c76a6a57-39cd-4b8d-be47-66a7e75f90d3",
+                "OPENAI_API_KEY": "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",
+                "ZAPI_INSTANCE":"3E1730E5C591609FC5FB2A6BCFBBBF38",  
+                "ZAPI_TOKEN":"F701b1ee6942342e9ba7f12df55a4dfcaS",
+                "ZAPI_URL":"https://api.z-api.io/instances/3E1730E5C591609FC5FB2A6BCFBBBF38/token/6A1B8FBD7D4DCFE3A85872F1/send-text",
+                "POSTGRES_CONNECTION":"postgresql://postgres:BUvVgawaIofWLHOWNxFYiaXSTUgLDAdq@tramway.proxy.rlwy.net:51805/railway",
+                "RAILWAYWEAVITE":"https://weaviate-production-0c71.up.railway.app"
+            },
+            "args": ["--arg1", "value1"]
+        }
+    ]
+}

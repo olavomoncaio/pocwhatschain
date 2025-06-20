@@ -4,20 +4,28 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.chains import LLMChain
 from dotenv import load_dotenv
 import os
+import weaviate
+import logging
 
 load_dotenv()
+logger = logging.getLogger(__name__)
 
 ## Conecta com o banco vetorial Weavite
 def vectordb_connect():
+    logger.info(f"Iniciando get_vectorstore.")
     # Conectar ao Weaviate
-    client = Weaviate.Client(
-        os.getenv("RAILWAY"),  # URL como string
-        additional_headers={"X-OpenAI-Api-Key": os.getenv("OPENAI_API_KEY")}
+    client = weaviate.Client(
+        url=os.getenv("RAILWAYWEAVITE"),  # URL como string
+        additional_headers={
+            "X-OpenAI-Api-Key": os.getenv("OPENAI_API_KEY")
+        }
     )
+
     return client
 
 ## Retorna a instância do vectorstore
 def get_vectorstore():
+    logger.info(f"Iniciando get_vectorstore.")
     # Acessando o índice existente
     vectorstore = Weaviate(
         client=vectordb_connect(),
@@ -26,14 +34,17 @@ def get_vectorstore():
         embedding=OpenAIEmbeddings(),   #None quando não for busca vetorial
         by_text=False          # Quando for fazer busca por vetores é igual a False
     )
+
+    logger.info(f"Finalizando get_vectorstore.")
     return vectorstore
 
 ## Buscar produtos relevantes no Weaviate
 def get_retriever(vectorstore):
-
+    logger.info(f"Iniciando get_retriver.")
     retriever = vectorstore.as_retriever(
     search_type="similarity",
-    search_kwargs={"k": 3}  # Retorna os 3 produtos mais relevantes
+    search_kwargs={"k": 5}  # Retorna os 3 produtos mais relevantes
     )
 
+    logger.info(f"Finalizando get_retriver.")
     return retriever
