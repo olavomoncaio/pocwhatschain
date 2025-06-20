@@ -2,7 +2,8 @@ import json
 from fastapi import APIRouter, Request
 from pydantic import BaseModel
 from typing import Optional
-from services.generativeservice import general_response
+# from services.generativeservice import general_response
+from services.generativeragservice import general_responseRAG
 from services.memorycacheasyncservice import get_key
 from services.whatsappservice import send_callback_whatsapp
 import logging
@@ -50,7 +51,7 @@ async def process_message(req: ReceivedCallbackModel):
 
         logger.info(f"Requisição recebida: {req.model_dump()}")
 
-        resposta = general_response(clientKey, req.text.message, phone_default)      
+        resposta = general_responseRAG(clientKey, req.text.message, phone_default)      
         callbackResult = await send_callback_whatsapp(resposta, req.phone)
         logger.info(f"Processamento finalizado com sucesso para o cliente {req.phone} - Resposta: {resposta} - ClientKey: {clientKey}")
 

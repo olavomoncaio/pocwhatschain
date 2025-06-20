@@ -1,76 +1,4836 @@
 {
-    "products": [
-      {
-        "code": "001",
-        "description": "Aveia em flocos - Excelente fonte de fibras solúveis e proteínas, ideal para o controle do colesterol e preparo de receitas saudáveis.",
-        "price": 12.50,
-        "measure_type": "kg",
-        "stock": 50
-      },
-      {
-        "code": "002",
-        "description": "Hibisco desidratado - Flor rica em antioxidantes e propriedades diuréticas, perfeita para infusões que ajudam no equilíbrio metabólico.",
-        "price": 36.00,
-        "measure_type": "kg",
-        "stock": 30
-      },
-      {
-        "code": "003",
-        "description": "Castanha-do-Pará - Alimento rico em selênio e gorduras boas, essencial para a saúde do sistema nervoso e imunológico.",
-        "price": 70.00,
-        "measure_type": "kg",
-        "stock": 20
-      },
-      {
-        "code": "004",
-        "description": "Berberina - Suplemento natural com propriedades anti-inflamatórias e metabólicas, recomendado para suporte à saúde cardiovascular e controle glicêmico.",
-        "price": 85.00,
-        "measure_type": "unidade",
-        "stock": 15
-      },
-      {
-        "code": "005",
-        "description": "Desinchá - Mistura de ervas como chá-verde, hortelã e carqueja, conhecida por promover o bem-estar e auxiliar na digestão. Contém 30 sachês.",
-        "price": 29.90,
-        "measure_type": "unidade",
-        "stock": 40
-      },
-      {
-        "code": "006",
-        "description": "Própolis em gotas - Reforço natural para o sistema imunológico, com propriedades antimicrobianas e antioxidantes. Frasco de 50 ml.",
-        "price": 25.00,
-        "measure_type": "unidade",
-        "stock": 25
-      },
-      {
-        "code": "007",
-        "description": "Mel puro - Fonte natural de energia com propriedades antibacterianas, ideal para adoçar chás e receitas de forma saudável. Vendido por litro.",
-        "price": 35.00,
-        "measure_type": "litro",
-        "stock": 50
-      },
-      {
-        "code": "008",
-        "description": "Leite de amêndoa - Bebida vegetal sem lactose, leve e nutritiva, perfeita para substituir o leite em dietas restritivas.",
-        "price": 18.00,
-        "measure_type": "litro",
-        "stock": 40
-      },
-      {
-        "code": "009",
-        "description": "Pão integral - Rico em fibras e nutrientes, ideal para um café da manhã equilibrado e uma alimentação saudável.",
-        "price": 19.80,
-        "measure_type": "kg",
-        "stock": 30
-      },
-      {
-        "code": "010",
-        "description": "Chá de cavalinha - Planta diurética com propriedades anti-inflamatórias, conhecida por auxiliar no combate à retenção de líquidos.",
-        "price": 150.00,
-        "measure_type": "kg",
-        "stock": 25
-      }
+    "produtos": [
+        {
+            "codigo": "8691",
+            "nome": "SILYMARIM 60 CAPS 1100MG SUNFOOD",
+            "descricao": "Auxilia na desintoxicação do fígado, protege contra danos causados por toxinas (álcool, medicamentos), e promove a regeneração das células hepáticas",
+            "preco": 64,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8519",
+            "nome": "Achocolatado Color Andina 200g",
+            "descricao": "",
+            "preco": 62,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "2318",
+            "nome": "Lasanha de Berinjela - Sem acompanhamento",
+            "descricao": "",
+            "preco": 44,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "5582",
+            "nome": "Floral Therapi - Serenide - Ansiedade - 30ml",
+            "descricao": "Ideal para quem sofre com estresse, agitação e nervosismo, promovendo relaxamento sem efeitos colaterais. Uso simples: 4 gotas diretamente na língua ou em água, 4 vezes ao dia",
+            "preco": 42,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1539",
+            "nome": "PropoMax Extra S/ Álcool 30ml - Apis Flora",
+            "descricao": "Potente ação antiviral, antibacteriana e anti-inflamatória, ideal para prevenir e auxiliar no tratamento de gripes, resfriados e infecções",
+            "preco": 38.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "395",
+            "nome": "Óleo de Pequi 50 ml - Direto da Fazenda - sem agrotoxico",
+            "descricao": "Rico em vitaminas A e E, antioxidantes e ômega-9, fortalece a imunidade, hidrata a pele e o cabelo, e tem ação anti-inflamatória. Versátil, pode ser usado na culinária (1 colher/dia) ou como tratamento cosmético",
+            "preco": 35,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4986",
+            "nome": "Black Maca Vegana s/ Glúten 60capsx 480mg Color Andina",
+            "descricao": "Suplemento natural sem glúten que auxilia no aumento de energia, equilíbrio hormonal e fortalecimento da vitalidade geral",
+            "preco": 34.80,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1519",
+            "nome": "Feijoada Vegabom",
+            "descricao": "",
+            "preco": 32.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "6981",
+            "nome": "Vinagre de Maçã Orgânico 600ml - Catarina",
+            "descricao": "Rico em enzimas e probióticos naturais, auxilia na digestão, controle glicêmico e detoxificação do organismo",
+            "preco": 32.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9294",
+            "nome": "PICADINHO DE SEITAN MARMITA IDEAL VEGGIE 350G",
+            "descricao": "",
+            "preco": 31,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "760",
+            "nome": "Caldo De Mandioquinha Da Casa",
+            "descricao": "",
+            "preco": 26,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9091",
+            "nome": "Pão de mandioquinha artesanal - Vicolo di pane - 500grs",
+            "descricao": "",
+            "preco": 25.33,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9119",
+            "nome": "Pão de cenoura artesanal - Vicolo di pane - 500grs",
+            "descricao": "",
+            "preco": 25.33,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9092",
+            "nome": "Pão de abóbora artesanal - Vicolo di pane - 500grs",
+            "descricao": "",
+            "preco": 25.30,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "819",
+            "nome": "Caldo de Feijão c/ Linguiça Calabresa Vegana",
+            "descricao": "",
+            "preco": 24.72,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "759",
+            "nome": "Caldo De Legumes Da Casa",
+            "descricao": "",
+            "preco": 24.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "761",
+            "nome": "Caldo Verde da Casa",
+            "descricao": "",
+            "preco": 24.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "5719",
+            "nome": "Trio Maca Veg 60caps 480mg - Color Andina",
+            "descricao": "Combinação de maca amarela, vermelha e preta para equilíbrio hormonal, energia, resistência física e suporte ao bem-estar geral em cápsulas veganas",
+            "preco": 24.25,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "758",
+            "nome": "Caldo De Abóbora Cabotia",
+            "descricao": "",
+            "preco": 24,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9316",
+            "nome": "DUX WHEY ISOLADO DOCE DE LEITE SACHE 30G",
+            "descricao": "",
+            "preco": 23.15,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "609",
+            "nome": "Pão Integral da Casa - Grande",
+            "descricao": "",
+            "preco": 23,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9018",
+            "nome": "BLV P PAOZINHO DE BATATA 198G - Belive",
+            "descricao": "",
+            "preco": 22.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "6237",
+            "nome": "Alimento de Amêndoa 1L - A Tal da Castanha",
+            "descricao": "",
+            "preco": 22.3,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7578",
+            "nome": "AGUA DE COCO 900ML CAMPO LARGO LOTE: 2330",
+            "descricao": "",
+            "preco": 21.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "6969",
+            "nome": "Mix de Ervas Sonibel 100gr",
+            "descricao": "",
+            "preco": 19.6,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9247",
+            "nome": "SPRAY PROPOLIS COM MENTA E MALVA 30ML UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 18.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "354",
+            "nome": "Aveia Farelo",
+            "descricao": "Rica em fibras solúveis, auxilia na saúde digestiva, controle do colesterol e promove saciedade, sendo uma opção nutritiva para refeições equilibradas",
+            "preco": 18.50,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "351",
+            "nome": "Farinha de Aveia",
+            "descricao": "",
+            "preco": 18.50,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9087",
+            "nome": "LASCAS DE COCO ASSADO COM CACAU 100 GR - Qualifit",
+            "descricao": "",
+            "preco": 18.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9088",
+            "nome": "LASCAS DE COCO ASSADO COM CAFE 100 GR - Qualifit",
+            "descricao": "",
+            "preco": 18.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "6238",
+            "nome": "Alimento c/ Castanha de Caju Sabor Leite Possible 1L - A Tal da Castanha",
+            "descricao": "",
+            "preco": 18,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7507",
+            "nome": "Diabetil 150g",
+            "descricao": "ajuda a regular os níveis de açúcar no sangue, melhorar a sensibilidade à insulina e reduzir a vontade de doces",
+            "preco": 18,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9174",
+            "nome": "BEBIDA VEGETAL DE CAJU, AVEIA E MORANGO 1L (possible) - a tal da castanha",
+            "descricao": "",
+            "preco": 18,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9146",
+            "nome": "WHEY PROTEIN CONCENTRADO 10SAC X 27G DOCE DE LEITE DUX NUTRITION LOTE: RA58276A",
+            "descricao": "é uma opção prática e eficiente para suprir as necessidades proteicas. Com alta qualidade e absorção rápida, fornece aminoácidos essenciais para recuperação muscular e ganho de massa magra. Ideal para pós-treino ou lanches rápidos",
+            "preco": 17.40,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9094",
+            "nome": "Pão de abóbora artesanal - Vicolo di pane - 250grs",
+            "descricao": "",
+            "preco": 17.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9093",
+            "nome": "Pão de mandioquinha artesanal - Vicolo di pane - 250grs",
+            "descricao": "",
+            "preco": 17,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7460",
+            "nome": "Barra Protéica Sabor Berries e Crispies 60g - Bold",
+            "descricao": "",
+            "preco": 16.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8469",
+            "nome": "ALIMENTO BEBIDA A TAL DA CASTANHA BARISTA AVEIA LONGA VIDA 12X1L",
+            "descricao": "",
+            "preco": 16.15,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "224",
+            "nome": "Aveia Flocos Fino",
+            "descricao": "Fonte de fibras e nutrientes essenciais, ideal para receitas leves e saudáveis, promovendo energia e bem-estar no dia a dia",
+            "preco": 15.99,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "678",
+            "nome": "Farinha de Arroz",
+            "descricao": "",
+            "preco": 15.99,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "7193",
+            "nome": "Bauru Protéico - Lar Vegano",
+            "descricao": "",
+            "preco": 15.99,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7191",
+            "nome": "Torta Vegarela - Lar Vegano",
+            "descricao": "",
+            "preco": 15.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7285",
+            "nome": "Quiche de Alho Poró Antonieles",
+            "descricao": "",
+            "preco": 15.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7196",
+            "nome": "Quiche de Alho Poró - Lar Vegano",
+            "descricao": "",
+            "preco": 15.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7208",
+            "nome": "Kibe Vegano - Lar Vegano",
+            "descricao": "",
+            "preco": 15.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7290",
+            "nome": "Pastel de Berinjela Folhado Antonieles",
+            "descricao": "",
+            "preco": 15.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7370",
+            "nome": "Pastel de Pizza vegetariana - Antonieles",
+            "descricao": "",
+            "preco": 15.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7027",
+            "nome": "Kibe de Abóbora Vegano Lanchonete - VegDaHora",
+            "descricao": "",
+            "preco": 15.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7219",
+            "nome": "Pastel de Shimeji Lanchonete - Vegdahora",
+            "descricao": "",
+            "preco": 15.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9151",
+            "nome": "PIPOCA DE CHURROS 90G - Senhora",
+            "descricao": "",
+            "preco": 14.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9103",
+            "nome": "Pão de cenoura artesanal - Vicolo di pane - 250grs",
+            "descricao": "",
+            "preco": 14.70,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9172",
+            "nome": "Chips de Banana com Canela 50 gramas - Barulhinho Bom",
+            "descricao": "",
+            "preco": 14.60,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9113",
+            "nome": "ALIMENTO ERVILHA PLANT POWER PROTEIN BANANA MORANGO 12X250ML",
+            "descricao": "bebida proteica à base de ervilha, 100% vegetal e rica em proteínas (15g por dose), ideal para veganos, intolerantes à lactose ou quem busca uma alternativa à whey protein. Oferece aminoácidos essenciais para recuperação muscular, saciedade e nutrição equilibrada",
+            "preco": 12.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9111",
+            "nome": "ALIMENTO ERVILHA PLANT POWER PROTEIN CARAMELO SALGADO 12X250ML",
+            "descricao": "Bebida vegana rica em proteínas à base de ervilha, com sabor de caramelo salgado. Ideal para nutrição prática, saudável e sem lactose",
+            "preco": 12.60,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7078",
+            "nome": "Brawnie Vegano 40g - Uncooked",
+            "descricao": "",
+            "preco": 11.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7468",
+            "nome": "Ultra Coffee da Casa c/ Leite",
+            "descricao": "",
+            "preco": 11.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3545",
+            "nome": "Queijo Ralado Vegano Parmesão 50g - Sora",
+            "descricao": "",
+            "preco": 9.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8423",
+            "nome": "SOPA PROTEICA 40 GRAMAS sache - TERRAMAZONIA",
+            "descricao": "",
+            "preco": 9.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8627",
+            "nome": "BISCOITO DE MAIZENA COM PSYLLIUM VEGANO 112G",
+            "descricao": "",
+            "preco": 9.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4995",
+            "nome": "Maca Amarela Veg 480mg 60caps - Color Andina",
+            "descricao": "Suplemento natural que auxilia no equilíbrio hormonal, aumento de energia e suporte ao bem-estar físico e mental, em cápsulas veganas e práticas.",
+            "preco": 9.6,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9026",
+            "nome": "Pão de Mel Zero - Belive",
+            "descricao": "",
+            "preco": 9.4,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "5860",
+            "nome": "Natural One  300ml Uva Special Blend",
+            "descricao": "",
+            "preco": 8.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9279",
+            "nome": "FD 6 900ML SUCO MISTO DE YACON, BET, MAC",
+            "descricao": "",
+            "preco": 8,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9218",
+            "nome": "YACON MACA,COUVE, ESPINAFRE L - 900ml - Natural One",
+            "descricao": "",
+            "preco": 8,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "471",
+            "nome": "Mini Pão da Casa - 2 unidades",
+            "descricao": "",
+            "preco": 7.90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8678",
+            "nome": "SOPA DE CANECA CALDO VERDE  DISPLAY 8X30G",
+            "descricao": "",
+            "preco": 7.45,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9110",
+            "nome": "NITRO 400 - PLANT POWER BETERRABA E LARANJA - SACHE 9G",
+            "descricao": "Suplemento natural com beterraba e laranja, ideal para energia e desempenho, rico em nitratos que auxiliam na saúde cardiovascular e na melhora da performance física",
+            "preco": 7,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "322",
+            "nome": "Biscoito Lemon Pepper - Antonieles",
+            "descricao": "",
+            "preco": 7,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "324",
+            "nome": "Biscoito de Orégano - Antonieles",
+            "descricao": "",
+            "preco": 7,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "328",
+            "nome": "Biscoito de Gergelim e Linhaça - Antonieles",
+            "descricao": "",
+            "preco": 7,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "6004",
+            "nome": "Bombom Chocolate Belga Branco c/ Creme de Avelã  - Luckau",
+            "descricao": "",
+            "preco": 6.3,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "327",
+            "nome": "Biscoito de Tomate Seco 100g - Antonieles",
+            "descricao": "",
+            "preco": 5.90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "456",
+            "nome": "Castanha de caju torrada com sal - SLW1",
+            "descricao": "",
+            "preco": 153.62,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "462",
+            "nome": "Castanha de caju torrada sem sal - SLW1",
+            "descricao": "",
+            "preco": 153.40,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "2218",
+            "nome": "Geléia Real 30gramas - Apilife - Nativa",
+            "descricao": "Conhecida por seus efeitos revitalizantes, melhora a energia, imunidade e reduz o estresse oxidativo. Ideal para combater fadiga, melhorar a concentração e promover rejuvenescimento celular",
+            "preco": 135.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "238",
+            "nome": "Beterraba em Pó",
+            "descricao": "",
+            "preco": 129.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9109",
+            "nome": "Spirulina 400 mg - 240 tabletes - OCEAN DROP",
+            "descricao": "Rica em proteínas completas (60-70% de sua composição), vitaminas (B12, ferro) e antioxidantes, fortalece a imunidade, aumenta a energia e auxilia na detoxificação do organismo",
+            "preco": 115.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "872",
+            "nome": "Semente de Abóbora Crua s/ Casca",
+            "descricao": "rico em nutrientes essenciais, como magnésio, zinco, ferro e gorduras saudáveis. Ideal para fortalecer o sistema imunológico, melhorar a saúde cardiovascular e auxiliar na saúde prostática",
+            "preco": 110.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "4896",
+            "nome": "Black Maca em Pó Vegana s/ Glúten - 100g Color Andina",
+            "descricao": "oferece energia sustentável, melhora a resistência física e auxilia no equilíbrio hormonal (libido, fertilidade e saúde reprodutiva)",
+            "preco": 96.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "391",
+            "nome": "Cranberry",
+            "descricao": "rica em antioxidantes, vitamina C e compostos bioativos como as proantocianidinas, conhecidas por prevenir infecções urinárias",
+            "preco": 90.44,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "8660",
+            "nome": "PURAVIDA OMEGA 3 EPA DHA 60 CAPS",
+            "descricao": "Ideal para memória, controle do colesterol e redução de inflamações. Essenciais para saúde cardiovascular, cerebral e anti-inflamatória",
+            "preco": 86.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3230",
+            "nome": "STRETCH L TREONATO 90X500MG",
+            "descricao": "Especificamente formulado para promover relaxamento muscular, saúde óssea e função cognitiva, penetra facilmente nas membranas celulares e na barreira hematoencefálica. Ideal para quem busca alívio de cãibras, melhora do sono e suporte neurológico, sem os efeitos laxativos comuns em outras formas de magnésio",
+            "preco": 68.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "333",
+            "nome": "Semente de Chia",
+            "descricao": "rico em ômega-3, fibras, proteínas e antioxidantes. Auxilia na digestão, controle glicêmico e saciedade, além de promover energia sustentável",
+            "preco": 65.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "8967",
+            "nome": "GLYCEMIC PRO 1200MG 60 CAPS - SUNFOOD",
+            "descricao": "Ideal para diabéticos tipo 2, pré-diabéticos ou quem busca equilibrar os níveis de açúcar no sangue, melhora a sensibilidade à insulina e reduz picos glicêmicos pós-refeições",
+            "preco": 64.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4424",
+            "nome": "Óleo de Semente de Abóbora - 1200mg - 60 cápsulas - Unilife",
+            "descricao": "Seus principais benefícios incluem Saúde da Próstata, Ação Anti-Inflamatória, Saúde Capilar, Fonte de Zinco e Magnésio e Versatilidade",
+            "preco": 61.35,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "5720",
+            "nome": "Adoçante Dietético em pó 20g - Color Andina",
+            "descricao": "",
+            "preco": 59.90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "5852",
+            "nome": "Mondo Pistache Pote 473ml",
+            "descricao": "",
+            "preco": 54.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "6722",
+            "nome": "Amora Miura + Vit. E + Vit. B6 + Magnésio 60caps 1100mg - Sunfood",
+            "descricao": "Auxilia no equilíbrio hormonal, alívio dos sintomas da TPM e menopausa, melhora da saúde da pele e redução do estresse oxidativo. O magnésio contribui para o relaxamento muscular e a vitamina B6 para o metabolismo hormonal",
+            "preco": 54.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3318",
+            "nome": "Balas de Alga Sortidas Pact. 500g - Sweet Jelly",
+            "descricao": "",
+            "preco": 52.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7495",
+            "nome": "Cloridrato de Betaina 60caps 948mg - Folhas e Raízes",
+            "descricao": "auxilia na digestão e saúde hepática, estimulando a produção de ácido clorídrico no estômago para melhor absorção de nutrientes. Ideal para quem tem hipocloridria (baixa acidez estomacal), má digestão ou desconforto após refeições. Também contribui para a detoxificação do fígado e metabolismo de homocisteína",
+            "preco": 52.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7325",
+            "nome": "Chlorella Vit. C + Cromo 900 mg 60caps - Sunfood",
+            "descricao": "Auxilia na eliminação de toxinas, reforço imunológico, melhora da disposição e equilíbrio dos níveis de açúcar no sangue",
+            "preco": 51.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "5305",
+            "nome": "Jaca Louca - VegDaHora - 500G",
+            "descricao": "",
+            "preco": 48.90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "2637",
+            "nome": "Moringa 500mg 60caps - 4 Elementos",
+            "descricao": "é uma planta supernutritiva, conhecida como \"árvore da vida\", com folhas ricas em vitaminas (A, C, E), minerais (cálcio, ferro, potássio), proteínas completas e antioxidantes. Seus benefícios incluem reforço imunológico, controle da glicemia, energia sustentável e ação anti-inflamatória",
+            "preco": 42.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7497",
+            "nome": "Relachá 900mg 60caps - Sunfood",
+            "descricao": "",
+            "preco": 42.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4965",
+            "nome": "Lasanha verde c/ Tomate Seco - Sem acompanhamento",
+            "descricao": "",
+            "preco": 40.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7544",
+            "nome": "CELLS PROTECT 60 CAPS 800MG SUNFOOD",
+            "descricao": "",
+            "preco": 39.90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7268",
+            "nome": "Vinagre de Maca Organico 500ml - Sr. Viccino",
+            "descricao": "",
+            "preco": 39.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1890",
+            "nome": "Extrato de Própolis Verde 11% p/v 30ml - Apis Flora",
+            "descricao": "ação antibacteriana, antiviral e reforço imunológico efica",
+            "preco": 37.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3954",
+            "nome": "Espaguete de Abobrinha com Salada",
+            "descricao": "",
+            "preco": 34.10,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8103",
+            "nome": "Adocante Stevia Color Andina 10g",
+            "descricao": "Ideal para diabéticos e quem busca reduzir o consumo de açúcar, proporciona dulçor sem impactar a glicemia",
+            "preco": 34.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "6230",
+            "nome": "Pasta de Castanha de Caju e Cacau 120g - A Tal da Castanha",
+            "descricao": "",
+            "preco": 33.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "5862",
+            "nome": "Pão de Aipim Zero Açúcar sem glúten e sem lactose DiMangiare 420g",
+            "descricao": "",
+            "preco": 32.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9290",
+            "nome": "CURRY GRÃO DE BICO MARMITA IDEAL VEGGIE 350G",
+            "descricao": "",
+            "preco": 31.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9292",
+            "nome": "MACARRÃO SEM GLÚTEN AO PESTO MARMITA IDEAL VEGGIE 350G",
+            "descricao": "",
+            "preco": 31.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9295",
+            "nome": "TIRAS DE SEITAN ACEBOLADA MARMITA IDEAL VEGGIE 350G",
+            "descricao": "",
+            "preco": 31.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3953",
+            "nome": "Espaguete de Abobrinha",
+            "descricao": "",
+            "preco": 29.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7314",
+            "nome": "Senne 60caps 300mg - Granflora",
+            "descricao": "laxante natural à base de folhas de sene (Cassia angustifolia), indicado para alívio ocasional da prisão de ventre",
+            "preco": 29.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "2891",
+            "nome": "Creme Dental s/fluor (Uva, Melissa e Camomila) 80g - Natural",
+            "descricao": "",
+            "preco": 28.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "470",
+            "nome": "PTS Granulado Caramelado",
+            "descricao": "",
+            "preco": 28.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "4073",
+            "nome": "Pão Zero Açúcar Leite e Ovos  SGL 420g  DiMangiare",
+            "descricao": "",
+            "preco": 27.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4425",
+            "nome": "Guaraná 500mg - 60caps - Unilife",
+            "descricao": "é um estimulante natural à base de sementes de guaraná, rico em cafeína de liberação prolongada, ideal para aumentar energia, foco e desempenho físico. Com ação termogênica e antioxidante, combate a fadiga e auxilia no metabolismo, sendo perfeito para pré-treino ou dias exigentes",
+            "preco": 27.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7055",
+            "nome": "Nutrimel Antigripal 300g - Rei Terra",
+            "descricao": "",
+            "preco": 26.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "5718",
+            "nome": "Maca Peruana Red (Vermelha), Color Andina Food, Veg ,60 Caps",
+            "descricao": "promove energia sustentável, equilíbrio hormonal (especialmente para saúde feminina e libido) e reforço imunológico",
+            "preco": 25.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4385",
+            "nome": "Vinagre de Maçã Orgânico - Almaromi 400ml",
+            "descricao": "Seus principais benefícios incluem auxílio na digestão, controle glicêmico, detoxificação e equilíbrio do pH corporal",
+            "preco": 24.90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "5545",
+            "nome": "Mel Bisnaga 280g - Flores Silvestres - Nativa's",
+            "descricao": "",
+            "preco": 24.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1528",
+            "nome": "Only4 70% Cacau Cranberry 70g",
+            "descricao": "",
+            "preco": 23.40,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7498",
+            "nome": "Vinagre de Maçã Orgânico 250ml - Sr Viccino",
+            "descricao": "",
+            "preco": 22.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "6233",
+            "nome": "Alimento c/ Aveia e Castanha de Caju p/ Café Barista 1L - A Tal da Castanha",
+            "descricao": "",
+            "preco": 22.30,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "6232",
+            "nome": "Alimento de Castanha de Caju Original 1L - A Tal da Castanha",
+            "descricao": "",
+            "preco": 22.30,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7538",
+            "nome": "*80G ZEROMILK SMILES 40% CACAU C/6",
+            "descricao": "",
+            "preco": 21.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8961",
+            "nome": "PALITO MONDO PISTACHE 70GR",
+            "descricao": "",
+            "preco": 20.60,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7080",
+            "nome": "Pao Caseiro Vegano 320g - DiMangiare",
+            "descricao": "",
+            "preco": 19.90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9248",
+            "nome": "SPRAY PROPOLIS COM MENTA E ROMA 30ML UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 19.23,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1631",
+            "nome": "Sequilhos s/ Glúten Sabor Nata 300g - Nazinha",
+            "descricao": "",
+            "preco": 19.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9246",
+            "nome": "SPRAY PROPOLIS COM GENGIBRE 30ML UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 18.90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "308",
+            "nome": "Bicarbonato de Sódio",
+            "descricao": "",
+            "preco": 18.50,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9073",
+            "nome": "LASCA DE COCO ASSADO COM CAPUCCINO 100 GR - Qualifit",
+            "descricao": "",
+            "preco": 18.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7287",
+            "nome": "Kibe de Tofu Antonieles",
+            "descricao": "",
+            "preco": 17.90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4435",
+            "nome": "Sorvete Mondo Blond Biscoito Belga - 70grs",
+            "descricao": "",
+            "preco": 17.40,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7316",
+            "nome": "Xarope da Vovo Isabel 250ml - Vida Fiber",
+            "descricao": "",
+            "preco": 17.33,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "6157",
+            "nome": "Pasta de Soja Alho Poró 180g - Bem me Quer",
+            "descricao": "",
+            "preco": 17.20,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "6444",
+            "nome": "Pasta de Soja Alho e Cebolinha 180g - Bem me Quer",
+            "descricao": "",
+            "preco": 17.20,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "355",
+            "nome": "Aveia Flocos Graúdo",
+            "descricao": "rico em fibras solúveis (beta-glucana) que auxiliam no controle do colesterol, saúde intestinal e saciedade",
+            "preco": 17.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "7190",
+            "nome": "Sorvete Mondo Black Pink 70gr",
+            "descricao": "",
+            "preco": 16.45,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7207",
+            "nome": "Esfiha Calabresa Vegana - Lar Vegano",
+            "descricao": "",
+            "preco": 15.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7221",
+            "nome": "Pastel de Tofu Lanchonete - Vegdahora",
+            "descricao": "",
+            "preco": 15.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7210",
+            "nome": "Esfiha Mista - Lar Vegano",
+            "descricao": "",
+            "preco": 15.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7284",
+            "nome": "Quiche de Espinafre - Antonieles",
+            "descricao": "",
+            "preco": 15.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7308",
+            "nome": "Esfiha 3 Queijos - Lar Vegan",
+            "descricao": "",
+            "preco": 15.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7367",
+            "nome": "Esfiha Aberta 3 Queijos vegetariana - Antonieles",
+            "descricao": "",
+            "preco": 15.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4443",
+            "nome": "Sorvete Mondo Original Caramelo 70grs",
+            "descricao": "",
+            "preco": 15.25,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8074",
+            "nome": "BOLD BARRA COOKIES BLACK 60G",
+            "descricao": "",
+            "preco": 14.90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7407",
+            "nome": "Espaguete Massa de Arroz Zero Glúten 200g - Casarão",
+            "descricao": "",
+            "preco": 13.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4077",
+            "nome": "Pao de Batata Doce Graos LV 420g - Sem gluten e sem lactose - DiMangiare",
+            "descricao": "",
+            "preco": 10.68,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "246",
+            "nome": "Sal Do Himalaia Fino",
+            "descricao": "",
+            "preco": 9.90,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9312",
+            "nome": "TAPI ALFAJOR TRADICIONAL 10 X 60G - TAPI FOODS",
+            "descricao": "",
+            "preco": 9.90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8760",
+            "nome": "Isotonico LOW CARB ABACAXI/HORTELA 500ML - Jungle - Plant Power",
+            "descricao": "",
+            "preco": 9.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "5376",
+            "nome": "Acompanhamento - Arroz Integral + Salada",
+            "descricao": "",
+            "preco": 8.50,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4297",
+            "nome": "Vinagre de Maçã - Almaromi 400ml",
+            "descricao": "Seus principais benefícios incluem auxílio na digestão, controle glicêmico, detoxificação e equilíbrio do pH corporal",
+            "preco": 8.20,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "5377",
+            "nome": "Acompanhamento - Salada",
+            "descricao": "",
+            "preco": 6.00,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8653",
+            "nome": "VITAFOR CREATINE 300G",
+            "descricao": "",
+            "preco": 129,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9226",
+            "nome": "FENO GREGO+BORO 120 CAPSULAS 500 MG - Ocean Drop",
+            "descricao": "ideal para saúde hormonal, libido e metabolismo. Auxilia no equilíbrio de testosterona, controle glicêmico e saúde óssea",
+            "preco": 119,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "244",
+            "nome": "Cavalinha Folha",
+            "descricao": "",
+            "preco": 99.99999999999999,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "390",
+            "nome": "Milho Espanhol Mostarda e Mel",
+            "descricao": "",
+            "preco": 99.00459418070444,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "278",
+            "nome": "Camomila Flor",
+            "descricao": "",
+            "preco": 98.99378881987576,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "8704",
+            "nome": "Bio Trimag - Puravida",
+            "descricao": "combina três formas queladas de alta absorção (citrato, bisglicinato e malato) para garantir benefícios completos: relaxamento muscular e nervoso, melhora do sono, redução de cãibras e suporte energético",
+            "preco": 90,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "285",
+            "nome": "Hibisco Flor Rosa",
+            "descricao": "",
+            "preco": 90,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "3244",
+            "nome": "Creatina Hardcore 3000mg 120caps - Integral Médica",
+            "descricao": "",
+            "preco": 89,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "357",
+            "nome": "Farinha de Uva",
+            "descricao": "",
+            "preco": 83.54609929078015,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9095",
+            "nome": "TRIO MAGNESIO 60 CAPS - OCEAN DROP",
+            "descricao": "oferecer benefícios completos: relaxamento muscular e nervoso, redução de cãibras, melhora do sono e suporte energético",
+            "preco": 79.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9121",
+            "nome": "DR BOTANICO BERBERINA DUO (BERBERIS VULGARIS + OLEO TCM) 2500M",
+            "descricao": "Ideal para controle do açúcar no sangue, perda de peso saudável e saúde cardiovascular",
+            "preco": 79,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "400",
+            "nome": "Xylitol Granel",
+            "descricao": "",
+            "preco": 74.00199600798403,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "4753",
+            "nome": "Glutamina 300gr - Integralmedica",
+            "descricao": "",
+            "preco": 74,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8773",
+            "nome": "COMPLEXO B (CLINICAL SERIES) - LAUTON",
+            "descricao": "Formulado para melhorar o metabolismo energético, saúde nervosa, produção de células sanguíneas e função cognitiva. Ideal para quem busca combater fadiga, fortalecer unhas e cabelos, ou tem deficiências nutricionais (como vegetarianos/veganos)",
+            "preco": 72,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9242",
+            "nome": "DR BOTANICO OLEO DE SEMENTE DE ABOBORA 2000MG 60 SOFTGELS",
+            "descricao": "",
+            "preco": 67,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4844",
+            "nome": "Silício Organico 100mg - 30caps - Unilife",
+            "descricao": "",
+            "preco": 65.3,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "366",
+            "nome": "Ameixa sem Caroço",
+            "descricao": "",
+            "preco": 62.09201388888889,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "8156",
+            "nome": "QUADMAGNESIO (DIMALATO+TAURATO+CITRATO) 60 CAPS - Dr. Botanico",
+            "descricao": "promove relaxamento muscular e nervoso (dimalato), saúde cardiovascular (taurato), alívio de cãibras (citrato) e suporte digestivo (óxido). Ideal para quem busca equilíbrio mineral completo, melhora do sono, redução do estresse e prevenção de deficiências",
+            "preco": 62,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8693",
+            "nome": "VITAMINA D3+VIT.C +ZINCO 1100MG 60CPS SUNFOOD",
+            "descricao": "suplemento imunoestimulante que combina nutrientes essenciais para reforçar a defesa do organismo. A vitamina D3 (colecalciferol) auxilia na imunidade e saúde óssea, a vitamina C (ácido ascórbico) potencializa a ação antioxidante e o zinco contribui para a função imunológica e síntese proteica. Ideal para prevenção de infecções, saúde da pele e suporte em períodos de maior demanda nutricional",
+            "preco": 60,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "458",
+            "nome": "Capim Limão / Capim Santo",
+            "descricao": "",
+            "preco": 60,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "8153",
+            "nome": "LICOPENO + SELENIO + ZINCO 500MG 60CAPS DR. BOTANICO",
+            "descricao": "O licopeno (extraído do tomate) combate radicais livres e apoia a saúde da próstata, enquanto o selênio e o zinco reforçam a imunidade, a qualidade espermática e a síntese de colágen",
+            "preco": 59,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3061",
+            "nome": "Magnésio Quelato 60caps - Meissen",
+            "descricao": "",
+            "preco": 59,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "370",
+            "nome": "Uva Passa Preta",
+            "descricao": "",
+            "preco": 58.009803921568626,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "8800",
+            "nome": "VITAMINA B12 GOTAS PREMIUM SABOR UVA (CLINICAL SERIES) 20 ML - LAUTON",
+            "descricao": "ideal para deficiências nutricionais, vegetarianos/veganos ou quem tem dificuldade em absorver a vitamina via alimentação. Auxilia na formação de células sanguíneas, função nervosa, energia e metabolismo",
+            "preco": 58,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1398",
+            "nome": "Óleo de Coco extra Virgem - 500ml - Copra",
+            "descricao": "",
+            "preco": 57.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1594",
+            "nome": "Creatina Hardcore 3000mg 60caps - Integralmedica",
+            "descricao": "",
+            "preco": 52,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1329",
+            "nome": "Amargun SupraErvas 500ml - Composto de Ervas",
+            "descricao": "",
+            "preco": 51,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "467",
+            "nome": "Castanha de caju torrada glaceada",
+            "descricao": "",
+            "preco": 50.1779359430605,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "4244",
+            "nome": "Óleo de Abacate - 1200mg / 60 cápsulas - Unilife",
+            "descricao": "",
+            "preco": 49,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9331",
+            "nome": "UNILIFE OLEO DE ALHO 150 X 350MG",
+            "descricao": "",
+            "preco": 48,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "276",
+            "nome": "Semente de Girassol s/ Casca s/ Sal (Pepita) crua",
+            "descricao": "",
+            "preco": 45.992990654205606,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "515",
+            "nome": "PTS Bacon Granulado",
+            "descricao": "",
+            "preco": 45,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "350",
+            "nome": "Corn Flakes Natural Granel",
+            "descricao": "",
+            "preco": 45,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9256",
+            "nome": "PROPOFLEX EXT. PROPOLIS ORGANICO 11% GTS 30ML UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 44.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "2378",
+            "nome": "Espetinho de Glúten - VegDaHora - 300g",
+            "descricao": "",
+            "preco": 42.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8814",
+            "nome": "CARDO MARIANO EXTRATO SECO 600MG 60CPS FOLHAS E RAIZES",
+            "descricao": "Indicado para desintoxicação e regeneração hepática, protege o fígado contra danos de toxinas (álcool, medicamentos, metais pesados) e auxilia no tratamento de esteatose hepática (\"fígado gorduroso\")",
+            "preco": 42,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1883",
+            "nome": "Vinagre de Maçã Orgânico - 500ml São Francisco",
+            "descricao": "",
+            "preco": 42,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1411",
+            "nome": "Uni Clorella 600mg - 60caps",
+            "descricao": "",
+            "preco": 40,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4925",
+            "nome": "Seca Barriga Hibisco 120caps 500mg - 4 Elementos",
+            "descricao": "",
+            "preco": 40,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8368",
+            "nome": "AMORA COM VITAMINAS 60 CAPS 1000MG - UNILIFE",
+            "descricao": "Auxilia no equilíbrio hormonal, alívio dos sintomas da TPM e menopausa, além de promover ação antioxidante e saúde da pele. Produto não indicado para gestantes sem acompanhamento médico",
+            "preco": 39,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8974",
+            "nome": "FOLHAS E RAIZES ORA PRO NOBIS + VIT C 60 CAPS",
+            "descricao": "deal para vegetarianos, atletas ou quem busca fortalecer a imunidade, melhorar a saúde intestinal e complementar a ingestão proteica. Auxilia na recuperação muscular, prevenção de anemia e saúde da pele",
+            "preco": 39,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "407",
+            "nome": "Grão de Bico Mexicano - 12mm",
+            "descricao": "",
+            "preco": 38.00000000000001,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "1413",
+            "nome": "OLEO DE ALHO 350MG - 100 CAPS - UNILIFE",
+            "descricao": "",
+            "preco": 38,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8584",
+            "nome": "OLEO DE ROSA MOSQUETA FACIAL E CORPORAL GOTAS 30ML - BellaPhytus",
+            "descricao": "",
+            "preco": 36,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "381",
+            "nome": "Amendoim Torrado s/ sal",
+            "descricao": "",
+            "preco": 35,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "1874",
+            "nome": "Pasta de Amendoim Crocante - Power One - 1kg",
+            "descricao": "",
+            "preco": 34.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4851",
+            "nome": "Ginkgo Biloba 60caps x 500mg - 4 Elementos",
+            "descricao": "",
+            "preco": 34,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4859",
+            "nome": "Castanha da Índia 500mg 60caps - 4 Elementos",
+            "descricao": "",
+            "preco": 32,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4861",
+            "nome": "Espinheira Santa 500mg 60caps - 4 Elementos",
+            "descricao": "",
+            "preco": 32,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4868",
+            "nome": "Uxi Amarelo + Unha de Gato 500mg 60caps - 4 Elementos",
+            "descricao": "",
+            "preco": 32,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9288",
+            "nome": "ALMÔNDEGAS DE LENTILHA MARMITA IDEAL VEGGIE 350G",
+            "descricao": "",
+            "preco": 31,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9289",
+            "nome": "BOBÓ GRÃO DE BICO MARMITA IDEAL VEGGIE 350G",
+            "descricao": "",
+            "preco": 31,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9293",
+            "nome": "PANQUECA SEM GLÚTEN MARMITA IDEAL VEGGIE 350G",
+            "descricao": "",
+            "preco": 31,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4928",
+            "nome": "Revitrol 60caps x 500mg - Unilife",
+            "descricao": "",
+            "preco": 31,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8712",
+            "nome": "NHOQUE DE ABOBORA AO SUGO 250G - Mr. Fit",
+            "descricao": "",
+            "preco": 30,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "262",
+            "nome": "Semente de Linhaça Dourada",
+            "descricao": "",
+            "preco": 30,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "4850",
+            "nome": "Arnica do Mato 500mg 60caps - 4 Elementos",
+            "descricao": "",
+            "preco": 30,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4867",
+            "nome": "Uxi Amarelo 4 Elementos - 60 x 500mg",
+            "descricao": "",
+            "preco": 29,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1397",
+            "nome": "Óleo de Coco extra Virgem - 200ml - Copra",
+            "descricao": "",
+            "preco": 28.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1530",
+            "nome": "Only4 70% Cacau Nibs de Cacau 70g",
+            "descricao": "",
+            "preco": 28.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1601",
+            "nome": "Balas de Alga Pact. 200g - Sweet Jelly",
+            "descricao": "",
+            "preco": 28,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4135",
+            "nome": "Ferro Quelato 60 cápsulas - 500mg - Unilife",
+            "descricao": "",
+            "preco": 28,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4193",
+            "nome": "Picolinato de Cromo 550mg - 60caps - Unilife",
+            "descricao": "",
+            "preco": 28,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4849",
+            "nome": "Quebra Pedra 500mg 60caps - 4 Elementos",
+            "descricao": "",
+            "preco": 28,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3135",
+            "nome": "Manteiga de Coco c/ Sal 200g - Qualicoco",
+            "descricao": "",
+            "preco": 27,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4405",
+            "nome": "Extrato de Própolis Verde 30ml - Minamel",
+            "descricao": "",
+            "preco": 26,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "4874",
+            "nome": "Unha de Gato 4 Elementos - 60 x 500mg",
+            "descricao": "",
+            "preco": 26,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "2240",
+            "nome": "Granola Artesanal 500g GranPic",
+            "descricao": "",
+            "preco": 24,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "2242",
+            "nome": "Granola Banana 500g GranPic",
+            "descricao": "",
+            "preco": 24,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9318",
+            "nome": "BLV PAOZINHO BELIVE DE CEBOLA 200G",
+            "descricao": "",
+            "preco": 21.95,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9085",
+            "nome": "LASCA DE COCO ASSADO NATURAL 100 GR - Qualifit",
+            "descricao": "",
+            "preco": 18.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8673",
+            "nome": "CREME VEGETAL SABOR MANTEIGA COM SAL 200G - SORA",
+            "descricao": "",
+            "preco": 18,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8638",
+            "nome": "ALFAJOR 55G COOKIES E CREME DR PEANUT",
+            "descricao": "",
+            "preco": 17.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "2875",
+            "nome": "Adoçante Stevita Soul Vegan 50env. 70mg",
+            "descricao": "",
+            "preco": 17,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3015",
+            "nome": "Farofa Proteica Crocante - Tempero Caseiro - Sora",
+            "descricao": "",
+            "preco": 17,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3463",
+            "nome": "Zeromilk Chocolate sem Lactose Crisp 70g Genevy",
+            "descricao": "",
+            "preco": 15.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8411",
+            "nome": "Alfajor sabor Avela de 55g - Dr. Peanut",
+            "descricao": "",
+            "preco": 14.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8983",
+            "nome": "La Fajor Pistache c/12und - La Ganexa",
+            "descricao": "",
+            "preco": 13.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7987",
+            "nome": "Bebida Booster MOVING Pro Morango e Acerola 310ml",
+            "descricao": "",
+            "preco": 13.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8585",
+            "nome": "Cookie BELIVE Baunilha e Chocolate Zero Acucar 67g",
+            "descricao": "",
+            "preco": 13.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8574",
+            "nome": "OLEO DE RICINO 100% PURO 30ML - BELLAPHYTUS",
+            "descricao": "",
+            "preco": 12,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3566",
+            "nome": "Protein Crisp Bar - Trufa de Avelã - Unid. 45g - IntegralMedica",
+            "descricao": "",
+            "preco": 11.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3453",
+            "nome": "Biscoito Polvilho Vegano Quinoa Real 65gr - Da Roça",
+            "descricao": "",
+            "preco": 10.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "3455",
+            "nome": "Biscoito Polvilho Vegano Maçã Fuji 65gr - Da Roça",
+            "descricao": "",
+            "preco": 10.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7912",
+            "nome": "YOPRO ENERGY BOOST CAFE EXP 15G PROT 250",
+            "descricao": "",
+            "preco": 10.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9024",
+            "nome": "Fermento Quimico Natural - Nutrisanti - 100grs",
+            "descricao": "",
+            "preco": 9.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9058",
+            "nome": "CHIPS BATATA DOCE TERIYAKI 45G - ROOTS TO GO",
+            "descricao": "",
+            "preco": 9.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "2536",
+            "nome": "Roots to Go - Chips Original - 45g",
+            "descricao": "",
+            "preco": 9.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8761",
+            "nome": "Isotonico LOW CARB MELANCIA/LIMAO 500ML - Jungle - Plant Power",
+            "descricao": "",
+            "preco": 9.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "1856",
+            "nome": "Cloreto de Magnésio PA 33g - Meissen",
+            "descricao": "",
+            "preco": 9.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9327",
+            "nome": "Double Shot A TAL DA CASTANHA ULTRA COFFEE DOSE DUPLA 10G",
+            "descricao": "",
+            "preco": 8.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9252",
+            "nome": "BELLABELHA - BALA DE GENGIBRE BELLAGOURMET 38G UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 8,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8655",
+            "nome": "VITAFOR OMEGAFOR PLUS 120 CAPS",
+            "descricao": "",
+            "preco": 209,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8702",
+            "nome": "VITAFOR ISOFORT BEAUTY BAUNILHA 450G",
+            "descricao": "",
+            "preco": 199,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8412",
+            "nome": "Vegan Tasty Cheesecake de Frutas Vermelhas 420g - Nutrify",
+            "descricao": "",
+            "preco": 159,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8701",
+            "nome": "MORNING SHOT SUBLYME 144G",
+            "descricao": "",
+            "preco": 139,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8656",
+            "nome": "VITAFOR OMEGAFOR PLUS 60 X 1000MG",
+            "descricao": "",
+            "preco": 129,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8605",
+            "nome": "SUPLEMENTO ALIMENTAR PLANT POWER CREATINA MONOHIDRATADA 6X300G",
+            "descricao": "",
+            "preco": 110,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8659",
+            "nome": "VITAFOR OMEGA 3 EPA DHA 60 CAPSULAS",
+            "descricao": "",
+            "preco": 99,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8665",
+            "nome": "VITAFOR MAGNESIO PLUS 90CAPS",
+            "descricao": "",
+            "preco": 99,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8180",
+            "nome": "NAD+TRANS RESVERATROL 600MG 60CAPS SUNFOOD",
+            "descricao": "",
+            "preco": 88,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7816",
+            "nome": "COQ10 + VITAMINA A D E E K 700MG CAPS SUNFOOD",
+            "descricao": "",
+            "preco": 86,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8770",
+            "nome": "CURCUMA 130MG CURCUMINA CLINICAL SERIES 30 CAPS - LAUTON",
+            "descricao": "",
+            "preco": 85,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7835",
+            "nome": "Colágeno Verisol 255g - Uva - ADA",
+            "descricao": "",
+            "preco": 79,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8637",
+            "nome": "PROBIOTIC 10 800MG 60CAPS DR. BOTANICO",
+            "descricao": "",
+            "preco": 77,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8853",
+            "nome": "OZENGLICO 1200MG 60 CPS SUNFOOD",
+            "descricao": "",
+            "preco": 76,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7843",
+            "nome": "MOROSEK + CACTINEA 2000MG 60 CAPS SUNFOOD",
+            "descricao": "",
+            "preco": 72,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8796",
+            "nome": "BETA GLUCANA 30 CPS CLINICAL SERIES - LAUTON",
+            "descricao": "",
+            "preco": 72,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7818",
+            "nome": "CURCUMA + PROPOLIS VERDE 1400MG 60 CAPS SUNFOOD",
+            "descricao": "",
+            "preco": 69,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7840",
+            "nome": "MAX CURCUMA 1000MG 60 CAPS SUNFOOD",
+            "descricao": "",
+            "preco": 69,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8152",
+            "nome": "OLI OLA BLEND 60 CAPS X 500 MG - SUNFOOD",
+            "descricao": "",
+            "preco": 69,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8157",
+            "nome": "SUPER DIGESTIVE ENZYMES 1000MG 60CAPS DR. BOTANICO",
+            "descricao": "",
+            "preco": 69,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8337",
+            "nome": "PASTA DE AMENDOIM 600G PACOCA DR PEANUT LOTE: 2367",
+            "descricao": "",
+            "preco": 69,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8767",
+            "nome": "CALCITRAX - CÁLCIO CITRATO MALATO - LAUTAN",
+            "descricao": "",
+            "preco": 67,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8579",
+            "nome": "OLEO DE ROSA MOSQUETA OZONIZADO GOTAS 20ML - BELLAPHYTOS",
+            "descricao": "",
+            "preco": 66,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8766",
+            "nome": "AMORA MIURA PREMIUM 750MG (CLINICAL SERIES) - LAUTON",
+            "descricao": "",
+            "preco": 64.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8444",
+            "nome": "GREEN MOROSEK 4500MG 60 SOFTGELS - DR. BOTANICO",
+            "descricao": "",
+            "preco": 64,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8387",
+            "nome": "MAGNESIO QUELATO 1000MG 60 CAPS SUNFOOD",
+            "descricao": "",
+            "preco": 62,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8594",
+            "nome": "PROBACILLUS 500MG 60CAPS SUNFOOD",
+            "descricao": "",
+            "preco": 59.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7882",
+            "nome": "FENO GREGO PREMIUM 410MG 60 CAPS - UNILIFE 4053",
+            "descricao": "",
+            "preco": 59,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8436",
+            "nome": "DR BOTANICO L ARGININA 1100MG 60CPS",
+            "descricao": "",
+            "preco": 59,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8146",
+            "nome": "AMORA MIURA+VIT.C+VIT.B6+MAGNESIO 1000 MG 60CPS DR.BOTANICO",
+            "descricao": "",
+            "preco": 58,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8485",
+            "nome": "L TIROSINA 1500MG 60 CPS SUNFOOD",
+            "descricao": "",
+            "preco": 58,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8532",
+            "nome": "Adocante Culinario Stevia Forno e Fogao 320G - Color Andina",
+            "descricao": "",
+            "preco": 58,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8696",
+            "nome": "OMEGA EPA 540 DHA 360 120 CAPS - SJT - MELFORT",
+            "descricao": "",
+            "preco": 56.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8520",
+            "nome": "Cacau Selvagem 100% puro Color Andina 200g",
+            "descricao": "",
+            "preco": 55,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8357",
+            "nome": "Óleo essencial de Alecrim - PHYTOTERÁPICA 10ml",
+            "descricao": "",
+            "preco": 54,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8578",
+            "nome": "CITRATO DE MAGNESIO 60 CAPS 800 MG SUNFOOD",
+            "descricao": "",
+            "preco": 53,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8737",
+            "nome": "EQUALIV VITAMINA C 1G X30 CPR",
+            "descricao": "",
+            "preco": 48.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8593",
+            "nome": "MELATONINA + MAGNESIO TREONATO 500MG 60CAPS NEW FOUR",
+            "descricao": "",
+            "preco": 48,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7739",
+            "nome": "FERRO SULFATO 65MG 60 CAPS SUNFOOD",
+            "descricao": "",
+            "preco": 42,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8028",
+            "nome": "FLORAL DIGNO - ACEITA-PET - 30 ml",
+            "descricao": "",
+            "preco": 42,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8036",
+            "nome": "FLORAL DIGNO - TIRA-MEDO - 30 ml",
+            "descricao": "",
+            "preco": 42,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8269",
+            "nome": "FLORAL THÉRAPI KIDS - ESPERTIM - 30 ML",
+            "descricao": "",
+            "preco": 42,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8524",
+            "nome": "ÓLEO ESSENCIAL CITRONELA ORGÂNICO OE 10 ML - AROMALIFE",
+            "descricao": "",
+            "preco": 42,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8546",
+            "nome": "ENZIMAS DIGESTIVAS 500MG 30 CAPS NEW FOUR",
+            "descricao": "",
+            "preco": 42,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8799",
+            "nome": "MELATONINA GOTAS PREMIUM 210MCG (CLINICAL SERIES) 30ML - LAUTON",
+            "descricao": "",
+            "preco": 42,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8427",
+            "nome": "Vitamina B12 Methyl 9,940mcg 60 caps - Unilife",
+            "descricao": "",
+            "preco": 39.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8798",
+            "nome": "CAFEINA - CAFFEINE (PERFORMANCE SERIES) 60 COMPRIMIDOS - LAUTON",
+            "descricao": "",
+            "preco": 39.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8815",
+            "nome": "ESPINHEIRA SANTA EXTRATO SECO 600MG 60CPS FOLHAS E RAIZES",
+            "descricao": "",
+            "preco": 39,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8820",
+            "nome": "MEMORIA ( MAGNESIO ,VIT B3,VIT B6, VIT B9,VIT K2,FERRO, SELENIO) 60 CAPS NEW FOUR",
+            "descricao": "",
+            "preco": 39,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7794",
+            "nome": "OLICHIA ORGANICO - AROMA ALHO - 250ml",
+            "descricao": "",
+            "preco": 38.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8518",
+            "nome": "Golden Milk (super blend) Color Andina 100g",
+            "descricao": "",
+            "preco": 38.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8496",
+            "nome": "GINKGO BILOBA C/GINSENG 60CAPS 500MG 4E",
+            "descricao": "",
+            "preco": 38,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7980",
+            "nome": "GOTAS VITAMINA B12 30 ML MELFORT",
+            "descricao": "",
+            "preco": 37,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8382",
+            "nome": "BARBATIMAO 60 CAPS 400MG FOLHAS E RAIZES",
+            "descricao": "",
+            "preco": 37,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7814",
+            "nome": "OLICHIA ORGANICO - AROMA MANJERICAO - 250ml",
+            "descricao": "",
+            "preco": 36.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8719",
+            "nome": "Carqueja Amarga 700mg - Multi Vitta",
+            "descricao": "",
+            "preco": 36,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7790",
+            "nome": "Pão de Abóbora Sem Açúcar 420g - DiMangiare (sem glúten e zero açúcar)",
+            "descricao": "",
+            "preco": 32.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8573",
+            "nome": "OLEO DE COPAIBA 100ML - BELLAPHYTUS",
+            "descricao": "",
+            "preco": 31.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8714",
+            "nome": "MOQUECA DE BANANA DA TERRA, ARROZ DE JASMIM E FAROFA ESPECIAL 350g - Mr. Fit",
+            "descricao": "",
+            "preco": 30,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8492",
+            "nome": "PASTA DE AMENDOIM 250G BROWNIE DR PEANUT LOTE: 217",
+            "descricao": "",
+            "preco": 28.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8491",
+            "nome": "AGAR AGAR 600MG - 60 CAPS - UNILIFE",
+            "descricao": "",
+            "preco": 28,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8723",
+            "nome": "FERRO + C C 60CPS UNILIFE",
+            "descricao": "",
+            "preco": 25,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8557",
+            "nome": "Acnow Control 150ml Rhenuks",
+            "descricao": "",
+            "preco": 24.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7869",
+            "nome": "Zinco Quelato 29,59 Mg - 60 caps ZUUN",
+            "descricao": "",
+            "preco": 24,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8509",
+            "nome": "LEVE CROCK TORRADITAS LOWCARB ORA-PRO-NOBIS 120G",
+            "descricao": "",
+            "preco": 23.8,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8306",
+            "nome": "Bisnaguinha Multigraos Belive Sem gluten 200g",
+            "descricao": "",
+            "preco": 22.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8581",
+            "nome": "SMART SAL INTEGRAL DE MOSSORÓ GROSSO 1KG",
+            "descricao": "",
+            "preco": 22,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7891",
+            "nome": "ALOE VERA PURO 500ML - VIDA ERVAS",
+            "descricao": "",
+            "preco": 20,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8535",
+            "nome": "CREAM CHEESE CULINARIO 150G - BASI.CO",
+            "descricao": "",
+            "preco": 19.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8698",
+            "nome": "BOLD BARRA BOMBOM CROCANTE 60G",
+            "descricao": "",
+            "preco": 17.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7766",
+            "nome": "SOPA DA NONA(LENTILHA/PAINÇO/TOMATE)180G - MEXIDONA",
+            "descricao": "",
+            "preco": 16,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8459",
+            "nome": "SABONETE NATURAL C/ARGILA BRANCA E ROSA MOSQUETA 95G",
+            "descricao": "",
+            "preco": 16,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7681",
+            "nome": "CALDA DE ACUCAR DE COCO 250ML - COPRA 20933",
+            "descricao": "",
+            "preco": 15.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7871",
+            "nome": "DOCE DE GOIABA CREMOSO 210G DIET",
+            "descricao": "",
+            "preco": 15.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8145",
+            "nome": "Alfajor Leite em Pó Dr. Peanut 55g",
+            "descricao": "",
+            "preco": 15.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "7743",
+            "nome": "Diabetil - elixir 500 ml",
+            "descricao": "",
+            "preco": 15,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8533",
+            "nome": "Maca Peruana RED Color Andina 100g",
+            "descricao": "",
+            "preco": 15,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8717",
+            "nome": "BANOFFE 50g - Mr. Fit",
+            "descricao": "",
+            "preco": 15,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8076",
+            "nome": "Acai com Guarana - 220ml - cx c/12 un",
+            "descricao": "",
+            "preco": 14.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8144",
+            "nome": "Alfajor Sabor Brigadeiro de Colher Dr. Peanut 55g",
+            "descricao": "",
+            "preco": 14.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8589",
+            "nome": "Pipoca Artesanal Rapadura e Coco SENHORA 100g",
+            "descricao": "",
+            "preco": 14.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8404",
+            "nome": "QUEIJO parmesão ralado castanha de caju 50 grs - VIDA VEG",
+            "descricao": "",
+            "preco": 13.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8587",
+            "nome": "Cookie BELIVE Double Chocolate Zero Acucar 67g (10 pct)",
+            "descricao": "",
+            "preco": 13.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8505",
+            "nome": "CASARAO 200G PREMIUM PENNE",
+            "descricao": "",
+            "preco": 13,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8380",
+            "nome": "Sorvete palito MONDO AÇAI 70GR",
+            "descricao": "",
+            "preco": 12,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8259",
+            "nome": "Refrigerante Proteico MOVING Abacaxi e Hortela 270ml",
+            "descricao": "",
+            "preco": 11,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8262",
+            "nome": "Refrigerante Proteico MOVING Morango e Acerola 270ml",
+            "descricao": "",
+            "preco": 11,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "521",
+            "nome": "Psyllium Husk 99%",
+            "descricao": "",
+            "preco": 350,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9090",
+            "nome": "NUTRIFY VEGANPRO FOUNDUE DE CHOCOLATE 450G",
+            "descricao": "",
+            "preco": 219,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9328",
+            "nome": "SUPLEMENTO ALIMENTAR PLANT POWER MACA VERDE COM MENTA THE ONE 360G",
+            "descricao": "",
+            "preco": 189,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "764",
+            "nome": "Laranja Desidratada em Fatias Redondas",
+            "descricao": "",
+            "preco": 180,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "822",
+            "nome": "Limão Desidratado",
+            "descricao": "",
+            "preco": 179.99999999999997,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "8870",
+            "nome": "OMEGAFOR MEMORY 60CPS VITAFOR",
+            "descricao": "",
+            "preco": 165,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "411",
+            "nome": "Colágeno Hidrolisado - Granel",
+            "descricao": "",
+            "preco": 160,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "8938",
+            "nome": "SUPLEMENTO ALIMENTAR PLANT POWER PROTEINA MORANGO 6X490G",
+            "descricao": "",
+            "preco": 159,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "833",
+            "nome": "Castanha de Caju Torrada c/ sal",
+            "descricao": "",
+            "preco": 149.0041067761807,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "821",
+            "nome": "Castanha de Caju Torrada s/ Sal",
+            "descricao": "",
+            "preco": 148.99791231732777,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "8893",
+            "nome": "NUTRIFY CREATINE GUMMY LIMAO 240G",
+            "descricao": "",
+            "preco": 145,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8947",
+            "nome": "CREATINE GUMMY 60CPS MOR NUTRIFY LOTE: 074841",
+            "descricao": "",
+            "preco": 145,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "892",
+            "nome": "Mix de Frutas Vermelhas",
+            "descricao": "",
+            "preco": 139.0042372881356,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "371",
+            "nome": "Nozes Mariposa Extra Light Granel",
+            "descricao": "",
+            "preco": 120,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "466",
+            "nome": "Guaraná em Pó",
+            "descricao": "",
+            "preco": 110,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9158",
+            "nome": "GREEN SHOT EM PO 30 DOSES 180G - OCEAN DROP",
+            "descricao": "",
+            "preco": 105,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9162",
+            "nome": "RESVERATROL 500MG 30 CAPSULAS - OCEAN DROP",
+            "descricao": "",
+            "preco": 105,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9165",
+            "nome": "SHOT MATINAL EM PO 30 DOSES 150G - OCEAN DROP",
+            "descricao": "",
+            "preco": 99,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9329",
+            "nome": "NAC 120 capsulas - 60 doses - Ocean Drop",
+            "descricao": "",
+            "preco": 94,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9169",
+            "nome": "VITAMINA D3+K2 GOTAS 30ML - OCEAN DROP",
+            "descricao": "",
+            "preco": 89,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8910",
+            "nome": "Creatina monohidrata 100% pura 300grs - SJT - BNT",
+            "descricao": "",
+            "preco": 86,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8981",
+            "nome": "DR BOTANICO COQ10 + VIT. E 450MG 60CAPS",
+            "descricao": "",
+            "preco": 85,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8973",
+            "nome": "DR BOTANICO -  VIVIAN (PROBIOTICO + PREBIOTICO + COQ10) 400MG 60C",
+            "descricao": "",
+            "preco": 84,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9074",
+            "nome": "DR BOTANICO GLUCOMANAN 500MG 60CAPS",
+            "descricao": "",
+            "preco": 82,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "253",
+            "nome": "Gengibre em Pó",
+            "descricao": "",
+            "preco": 80,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9159",
+            "nome": "MELATONINA 30 GOMAS 60G - OCEAN DROP",
+            "descricao": "",
+            "preco": 79,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9241",
+            "nome": "DR BOTANICO MEGA D3 + VIT. K2 MK7 500MG 60 SOFTGELS",
+            "descricao": "",
+            "preco": 79,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9240",
+            "nome": "DR BOTANICO GLUCOSAMINA + CONDROITINA (COLLAGEN TP. 2 E VITAMI",
+            "descricao": "",
+            "preco": 76,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8872",
+            "nome": "DR PEANUT PASTA COOKIES 600G",
+            "descricao": "",
+            "preco": 69,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9070",
+            "nome": "DR BOTANICO MOROSEK 2000MG 60 CAPS",
+            "descricao": "",
+            "preco": 69,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "92",
+            "nome": "VITAMINA C + ZINCO 30 GOMAS 90G - Ocean Drop",
+            "descricao": "",
+            "preco": 69,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9271",
+            "nome": "MEL ORGANICO POTE 500G UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 65,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9080",
+            "nome": "SUNFOOD MOROSEK 60 CAPS 2000MG",
+            "descricao": "",
+            "preco": 62,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8908",
+            "nome": "Maca Black Xtreme e Zma 2200mg 300caps - Sunfood",
+            "descricao": "",
+            "preco": 59.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9064",
+            "nome": "DR BOTANICO CRANBERRY (VIT. C + VIT. E) 1500MG 60CAPS",
+            "descricao": "",
+            "preco": 59,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8854",
+            "nome": "CURCUMA+TCM 1100MG 60 CPS +30 SOFTGELS SUNFOOD",
+            "descricao": "",
+            "preco": 58,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9069",
+            "nome": "DR BOTANICO MAGNESIO QUELATO 1000MG 60CAPS",
+            "descricao": "",
+            "preco": 58,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9250",
+            "nome": "PROPOLIS 2000 60 CAPS 500MG UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 56.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9138",
+            "nome": "DR BOTANICO ADK MULTIVITAMINICO 500MG 60CAPS",
+            "descricao": "",
+            "preco": 56,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8953",
+            "nome": "LA GANEXA PASTA AMENDOIM PISTACHE 450G",
+            "descricao": "",
+            "preco": 55.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9147",
+            "nome": "MORANGOS CONGELADOS  1KG - ZIGS",
+            "descricao": "",
+            "preco": 55,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9243",
+            "nome": "DR BOTANICO PSYLLIUM 1200MG 60CAPS",
+            "descricao": "",
+            "preco": 54,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9251",
+            "nome": "BELLABELHA - IMMUNE UP 60 CAPS 650MG UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 53.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9170",
+            "nome": "VITAMINA B12 GOTAS 30ML - OCEAN DROP",
+            "descricao": "",
+            "preco": 49,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9237",
+            "nome": "SUNFOOD CALCIO + VIT. K2 MK7 + VIT. D3 500MG 60 SOFTGELS",
+            "descricao": "",
+            "preco": 45,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9272",
+            "nome": "MEL ORGANICO POTE 300G UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 44,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9249",
+            "nome": "MEL COM PROPOLIS 300G UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 39.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9255",
+            "nome": "PROPOFLEX EXT. AQUOSO DE PROPOLIS 11% GTS 30ML UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 39.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9032",
+            "nome": "Mangarataia Em Po 150g - Terramazonia",
+            "descricao": "",
+            "preco": 39,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9211",
+            "nome": "GRANOLA BANANA E CACAU 800G GRINGS",
+            "descricao": "",
+            "preco": 38.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9021",
+            "nome": "BOLO LARANJA GOTAS CHOCOLATE ZERO - BELIVE",
+            "descricao": "",
+            "preco": 36,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9025",
+            "nome": "Bolo de Chocolate Zero - Belive",
+            "descricao": "",
+            "preco": 36,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "380",
+            "nome": "Amendoim Torrado e Salgado",
+            "descricao": "",
+            "preco": 35,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9275",
+            "nome": "MEL PURO BISNAGA CORTA - GOTAS 300G UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 32.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9258",
+            "nome": "EXTRATO DE PROPOLIS VERDE 11% SPRAY 30ML UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 32,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9270",
+            "nome": "MEL ORGANICO BISNAGA 250G - TAMPA CONE UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 32,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9081",
+            "nome": "4E AMORA MIURA 60CAPS 500MG",
+            "descricao": "",
+            "preco": 30,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9321",
+            "nome": "PAO DE FORMA GRANI AMICI ANCESTRALE BATATA DOCE 420G",
+            "descricao": "",
+            "preco": 29,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9325",
+            "nome": "CACAU EM PO 100% ASTER 180G",
+            "descricao": "",
+            "preco": 27.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9004",
+            "nome": "OLEO DE AMENDOAS 100ML UNILIFE",
+            "descricao": "",
+            "preco": 26,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8887",
+            "nome": "ESSENCIA QUARTINHO DE BEBE 10ML THERAPI",
+            "descricao": "",
+            "preco": 25,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8889",
+            "nome": "ESSENCIA LABOR 10ML THERAPI",
+            "descricao": "",
+            "preco": 25,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8890",
+            "nome": "ESSENCIA BRISA DO MAR 10ML THERAPI",
+            "descricao": "",
+            "preco": 25,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9040",
+            "nome": "OLEO ESSENCIAL COM PERFUME THERAPI - AR DAS MONTANHAS - 10 ml",
+            "descricao": "",
+            "preco": 25,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9017",
+            "nome": "EXTRATO DE CURCUMA 30 ML SUPRAERVAS",
+            "descricao": "",
+            "preco": 24.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9181",
+            "nome": "ALIMENTO VEGETAL SABOR CREAM CHEESE 150G - FRESCO",
+            "descricao": "",
+            "preco": 24.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9207",
+            "nome": "QUINOA FACIL CASTANHA ORGANICA 100G GRINGS",
+            "descricao": "",
+            "preco": 24.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8884",
+            "nome": "BERINJELA 500MG 60CPS NINHO VERDE",
+            "descricao": "",
+            "preco": 24,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9282",
+            "nome": "ELLAPÉS LOÇÃO 50G - BELLAPHYTUS",
+            "descricao": "",
+            "preco": 23,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9175",
+            "nome": "EXTRATO DE DENTE DE LEAO 30ML SUPRAERVAS",
+            "descricao": "",
+            "preco": 22,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9034",
+            "nome": "PET SUCO CAMPO LARGO 06/900ML GOIABA E MACA",
+            "descricao": "",
+            "preco": 19.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9180",
+            "nome": "QUEIJO VIDA VEG DE CASTANHA-DE-CAJU PROVOLONE RALA",
+            "descricao": "",
+            "preco": 19.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9205",
+            "nome": "TRIO ANDINO 150G GRINGS",
+            "descricao": "",
+            "preco": 19.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9259",
+            "nome": "EXTRATO DE PROPOLIS VERDE 11% GTS 20ML UNICA - APISVIDA",
+            "descricao": "",
+            "preco": 19.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8970",
+            "nome": "AMORA MIURA 500ML VIDA ERVAS",
+            "descricao": "",
+            "preco": 19,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9203",
+            "nome": "12 GRAOS SELECOES ESPECIAIS 500g GRING`S",
+            "descricao": "",
+            "preco": 18.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9084",
+            "nome": "LASCA DE COCO ASSADO COM MARACUJA 100 GR - Qualifit",
+            "descricao": "",
+            "preco": 18.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9100",
+            "nome": "LASCA DE COCO ASSADO COM MASCAVO E GENGIBRE 100 GR - Qualifit",
+            "descricao": "",
+            "preco": 18.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9101",
+            "nome": "LASCA DE COCO ASSADO COM SAL ROSA E MOSTARDA 100 GR -Qualifit",
+            "descricao": "",
+            "preco": 18.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9194",
+            "nome": "Farofa de Inhame Defumado 150 gramas - Barulhinho Bom",
+            "descricao": "",
+            "preco": 18,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9048",
+            "nome": "BOLD BARRA PISTACHE 60G",
+            "descricao": "",
+            "preco": 17.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9285",
+            "nome": "FLOCOS AMARANTO 150G ORGANICO",
+            "descricao": "",
+            "preco": 17,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9108",
+            "nome": "BOLD BARRA CRUNCH COOKIES E CREAM 50G",
+            "descricao": "",
+            "preco": 16.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "406",
+            "nome": "Açúcar Mascavo",
+            "descricao": "",
+            "preco": 16.002004008016034,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9050",
+            "nome": "GRANOLA S/ GLUTEN ESPECIAL - Leve Croc - 200g",
+            "descricao": "",
+            "preco": 15.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9145",
+            "nome": "WHEY PROTEIN CONCENTRADO 10SAC X 27G COCO DUX NUTRITION LOTE: RM47885A",
+            "descricao": "",
+            "preco": 15.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9054",
+            "nome": "CANELA EM PO  - 40g - Leve Croc",
+            "descricao": "",
+            "preco": 14.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9155",
+            "nome": "PIPOCA DE cookies and cream 90G - Senhora",
+            "descricao": "",
+            "preco": 14.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9189",
+            "nome": "Chips Banana Verde 50 gramas - Barulhinho Bom",
+            "descricao": "",
+            "preco": 14.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9210",
+            "nome": "PIPOCA DOCE CHOCOLATE COCO 90G DA SENHORA",
+            "descricao": "",
+            "preco": 14.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9313",
+            "nome": "NUTRATA WHEY W100 BAUNILHA SACHE 30G",
+            "descricao": "",
+            "preco": 14.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9191",
+            "nome": "Chips de Macaxeira 50 gramas - Barulhinho Bom",
+            "descricao": "",
+            "preco": 13.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9300",
+            "nome": "LA FAJOR LEITINHO LAGANEXA",
+            "descricao": "",
+            "preco": 13.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9209",
+            "nome": "BLV BROWNIE COCO ZERO - DP 10UN BELIVE",
+            "descricao": "",
+            "preco": 13.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9153",
+            "nome": "FARINHA DE AVEIA SEM GLUTEN 200G GRINGS",
+            "descricao": "",
+            "preco": 12.5,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "8899",
+            "nome": "AMORI MASSA DE ARROZ S/OVOS S/GLUTEN 200G",
+            "descricao": "",
+            "preco": 12,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9212",
+            "nome": "FECULA DE BATATA TRISANTI 200GR",
+            "descricao": "",
+            "preco": 10.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9324",
+            "nome": "MINIPAO GRANI AMICI SEM GLUTEN E LACTOSE 70G",
+            "descricao": "",
+            "preco": 6.9,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "9222",
+            "nome": "COCO, DAMASCO E MARACUJA ZERO COMOAMO 16X20G",
+            "descricao": "",
+            "preco": 4.3,
+            "unidade": "unidade",
+            "fragmentavel": "Não"
+        },
+        {
+            "codigo": "248",
+            "nome": "Ginseng panax em pó",
+            "descricao": "",
+            "preco": 800.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "627",
+            "nome": "Tribulus Terrestre",
+            "descricao": "",
+            "preco": 503.71,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "359",
+            "nome": "Guaraná em pó Premium",
+            "descricao": "",
+            "preco": 240.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "753",
+            "nome": "Castanha do Pará Média",
+            "descricao": "",
+            "preco": 225.01,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "729",
+            "nome": "Curcuma premium - Direto da Fazenda Bahia - sem agrotoxico",
+            "descricao": "",
+            "preco": 223.06,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "305",
+            "nome": "Moringa em Pó",
+            "descricao": "",
+            "preco": 220.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "331",
+            "nome": "Psyllium 90%",
+            "descricao": "",
+            "preco": 210.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "230",
+            "nome": "Cravo da índia Flor",
+            "descricao": "",
+            "preco": 210.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "549",
+            "nome": "Castanha do Pará Quebrada",
+            "descricao": "",
+            "preco": 205.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "429",
+            "nome": "SNACK DE SEMENTE DE ABOBORA DESCASCADA   PASSAS",
+            "descricao": "",
+            "preco": 190.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "929",
+            "nome": "MACA PERUANA   VERMELHA   GELATINIZADA EM PO PURA",
+            "descricao": "",
+            "preco": 189.02,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "871",
+            "nome": "MACA PERUANA PRETA EM PO PURA",
+            "descricao": "",
+            "preco": 189.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "237",
+            "nome": "VEGAN PROTEIN CACAU EAT CLEAN granel por  kg",
+            "descricao": "",
+            "preco": 180.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "410",
+            "nome": "Anis Estrelado",
+            "descricao": "",
+            "preco": 180.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "805",
+            "nome": "Drageado Banana",
+            "descricao": "",
+            "preco": 180.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "474",
+            "nome": "Drageado de Uva Passa - Granel",
+            "descricao": "",
+            "preco": 156.33,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "287",
+            "nome": "Canela Vera AA 6/8cm",
+            "descricao": "",
+            "preco": 150.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "624",
+            "nome": "Snack de Arroz Sabor Queijo",
+            "descricao": "",
+            "preco": 150.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "749",
+            "nome": "Snack de Arroz Sabor Tomate",
+            "descricao": "",
+            "preco": 150.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "375",
+            "nome": "Leite de Coco em pó Fat 60-65% - HI-FAT - Vegano",
+            "descricao": "",
+            "preco": 147.52,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "217",
+            "nome": "Chimichurri s/ Sódio Tempero Granel",
+            "descricao": "",
+            "preco": 140.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "372",
+            "nome": "TEMPERO MIX P/ SALADA SEMENTES OLEAGINOSAS SABOR LIMAO",
+            "descricao": "",
+            "preco": 140.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "710",
+            "nome": "Chips de Mandioquinha",
+            "descricao": "",
+            "preco": 140.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "297",
+            "nome": "MIX GRAOS NOBRES",
+            "descricao": "",
+            "preco": 139.01,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "352",
+            "nome": "Farinha De Amêndoa",
+            "descricao": "",
+            "preco": 130.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "286",
+            "nome": "Chá Verde Importado",
+            "descricao": "",
+            "preco": 130.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "733",
+            "nome": "Leite de Coco em Pó Vegano",
+            "descricao": "",
+            "preco": 130.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "250",
+            "nome": "Maca Peruana Amarela",
+            "descricao": "",
+            "preco": 130.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "629",
+            "nome": "Gelatina Pó Pura sem Sabor - 240 Bloom",
+            "descricao": "",
+            "preco": 127.99,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "361",
+            "nome": "Mix com Castanhas com uva passa preta",
+            "descricao": "",
+            "preco": 125.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "386",
+            "nome": "Castanha de Caju Assada",
+            "descricao": "",
+            "preco": 125.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "257",
+            "nome": "Colorau Premium - Urucum - Direto da Fazenda Bahia - sem agrotoxico",
+            "descricao": "",
+            "preco": 120.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "236",
+            "nome": "TEMPERO EDU GUEDES SEM SÓDIO",
+            "descricao": "",
+            "preco": 120.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "428",
+            "nome": "BALAS DE GELATINA COM MARSHMALLOW",
+            "descricao": "",
+            "preco": 120.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "816",
+            "nome": "Amêndoa Torrada s/ sal",
+            "descricao": "",
+            "preco": 120.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "290",
+            "nome": "Folha de Louro",
+            "descricao": "",
+            "preco": 120.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "242",
+            "nome": "Espinheira Santa",
+            "descricao": "",
+            "preco": 111.39,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "921",
+            "nome": "Tempero do Chef sem sódio",
+            "descricao": "",
+            "preco": 110.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "266",
+            "nome": "Ginseng em pó granel",
+            "descricao": "",
+            "preco": 110.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "482",
+            "nome": "Orégano Peruano",
+            "descricao": "",
+            "preco": 100.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "347",
+            "nome": "PSYLLIUM HUSK 60%",
+            "descricao": "",
+            "preco": 100.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "666",
+            "nome": "Banana Chips com Sal",
+            "descricao": "",
+            "preco": 100.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "588",
+            "nome": "Rosquinha Morango sem açúcar, glúten e leite - vegano",
+            "descricao": "",
+            "preco": 100.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "226",
+            "nome": "CARVÃO VEGETAL ATIVADO GRANEL",
+            "descricao": "",
+            "preco": 100.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "690",
+            "nome": "Tanchagem",
+            "descricao": "",
+            "preco": 100.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "925",
+            "nome": "Fibra de Maça",
+            "descricao": "",
+            "preco": 98.99,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "826",
+            "nome": "Alho Cebola e Salsa sem sódio",
+            "descricao": "",
+            "preco": 98.98,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "529",
+            "nome": "Lemon Pepper fit sem sal",
+            "descricao": "",
+            "preco": 98.96,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "641",
+            "nome": "Biscoito Sembei de Gergelim",
+            "descricao": "",
+            "preco": 98.03,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "695",
+            "nome": "Biscoito Sembei Gengibre",
+            "descricao": "",
+            "preco": 97.99,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "636",
+            "nome": "Maracujá Folha Rasurada",
+            "descricao": "",
+            "preco": 95.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "231",
+            "nome": "Banana Chips Natural",
+            "descricao": "",
+            "preco": 94.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "863",
+            "nome": "Banana Chips c/ Lemon Pepper",
+            "descricao": "",
+            "preco": 93.99,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "861",
+            "nome": "Cúrcuma Pura Premium",
+            "descricao": "",
+            "preco": 90.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "431",
+            "nome": "Mulungu Casca - rasurado",
+            "descricao": "",
+            "preco": 90.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "581",
+            "nome": "Castanha de Caju Caramelizada com Coco",
+            "descricao": "",
+            "preco": 90.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "378",
+            "nome": "Castanha de Caju Caramelizada com Gergelim",
+            "descricao": "",
+            "preco": 90.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "587",
+            "nome": "Uxi Amarelo Rasura",
+            "descricao": "",
+            "preco": 88.02,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "901",
+            "nome": "Gengibre em pó Premium",
+            "descricao": "",
+            "preco": 85.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "776",
+            "nome": "Cacau em pó Solúvel",
+            "descricao": "",
+            "preco": 85.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "455",
+            "nome": "Lemon Pepper",
+            "descricao": "",
+            "preco": 85.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "433",
+            "nome": "Páprica Doce",
+            "descricao": "",
+            "preco": 84.92,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "432",
+            "nome": "Páprica Defumada",
+            "descricao": "",
+            "preco": 80.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "550",
+            "nome": "Tâmara Jumbo - Granel",
+            "descricao": "",
+            "preco": 80.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "633",
+            "nome": "Feno Grego em Grãos ou pó",
+            "descricao": "",
+            "preco": 80.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "373",
+            "nome": "Farinha de Banana Verde",
+            "descricao": "",
+            "preco": 78.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "299",
+            "nome": "Canela em Pó Premiun",
+            "descricao": "",
+            "preco": 76.01,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "435",
+            "nome": "Sene Folha TV3",
+            "descricao": "",
+            "preco": 71.76,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "275",
+            "nome": "Hortelã Triturado",
+            "descricao": "",
+            "preco": 70.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "245",
+            "nome": "Açúcar de Coco",
+            "descricao": "",
+            "preco": 66.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "615",
+            "nome": "Barbatimão Casca",
+            "descricao": "",
+            "preco": 60.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "448",
+            "nome": "Amendoim Picante Crocante",
+            "descricao": "",
+            "preco": 60.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "384",
+            "nome": "Amendoim Cebola e Salsa Crocante",
+            "descricao": "",
+            "preco": 60.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "280",
+            "nome": "Capim Cidrão",
+            "descricao": "",
+            "preco": 60.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "229",
+            "nome": "ERVA DOCE",
+            "descricao": "",
+            "preco": 60.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "645",
+            "nome": "Amendoim Japonês Mendorato",
+            "descricao": "",
+            "preco": 60.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "597",
+            "nome": "GERGELIM MIX P/SUSHI",
+            "descricao": "",
+            "preco": 56.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "409",
+            "nome": "Banana Passa Granel",
+            "descricao": "",
+            "preco": 56.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "270",
+            "nome": "Gergelim Preto (Premium)",
+            "descricao": "",
+            "preco": 55.99,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "680",
+            "nome": "Pau Tenente (Quassia)",
+            "descricao": "",
+            "preco": 55.98,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "284",
+            "nome": "Gergelim Branco Descascado - 99,97%",
+            "descricao": "",
+            "preco": 54.01,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "345",
+            "nome": "Quinoa Flocos",
+            "descricao": "",
+            "preco": 48.99,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "269",
+            "nome": "Manjericão em Flocos Desidratado",
+            "descricao": "",
+            "preco": 45.04,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "920",
+            "nome": "Amendoim Vermelho Cru",
+            "descricao": "",
+            "preco": 45.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "258",
+            "nome": "Farinha de Araruta sem gluten",
+            "descricao": "",
+            "preco": 40.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "859",
+            "nome": "Gérmen de Trigo Granel",
+            "descricao": "",
+            "preco": 40.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "844",
+            "nome": "Amendoim Caramelizado Gergelim",
+            "descricao": "",
+            "preco": 40.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "740",
+            "nome": "PTS Graúda Natural",
+            "descricao": "",
+            "preco": 38.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "362",
+            "nome": "Quinoa Branca Grãos",
+            "descricao": "",
+            "preco": 36.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "309",
+            "nome": "Farinha de Grão de Bico",
+            "descricao": "",
+            "preco": 35.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "335",
+            "nome": "Lentilha Síria (Vermelha)",
+            "descricao": "",
+            "preco": 32.01,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "307",
+            "nome": "Argila Verde Granel",
+            "descricao": "",
+            "preco": 32.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "747",
+            "nome": "Farinha de Linhaça Dourada",
+            "descricao": "",
+            "preco": 32.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "701",
+            "nome": "PTS Granulada Natural",
+            "descricao": "",
+            "preco": 28.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "661",
+            "nome": "Tapioca Granulada grossa Prata",
+            "descricao": "",
+            "preco": 25.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "864",
+            "nome": "Tapioca Granulada Fina",
+            "descricao": "",
+            "preco": 20.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "263",
+            "nome": "Soja em Grãos - Kg",
+            "descricao": "",
+            "preco": 16.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "452",
+            "nome": "TRIGO EM GRÃOS",
+            "descricao": "",
+            "preco": 16.00,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "520",
+            "nome": "SAL DO HIMALAIA GROSSO - GRANEL",
+            "descricao": "",
+            "preco": 12.89,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "304",
+            "nome": "Dente de Leão",
+            "descricao": "",
+            "preco": 200,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "510",
+            "nome": "Alecrim",
+            "descricao": "",
+            "preco": 70,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "797",
+            "nome": "Banana Chips Canela e Açúcar",
+            "descricao": "",
+            "preco": 100.00000000000001,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "268",
+            "nome": "Amêndoa torrada salgada",
+            "descricao": "",
+            "preco": 95.98591549295776,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "787",
+            "nome": "Amora Folha Morus Alba",
+            "descricao": "",
+            "preco": 80,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "837",
+            "nome": "Erva Baleeira Folha",
+            "descricao": "",
+            "preco": 100,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "461",
+            "nome": "Arnica",
+            "descricao": "",
+            "preco": 63.97058823529411,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "575",
+            "nome": "Páprica Picante",
+            "descricao": "",
+            "preco": 80,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "497",
+            "nome": "Snack Arroz com Pimenta",
+            "descricao": "",
+            "preco": 160,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "518",
+            "nome": "Stevia Granel",
+            "descricao": "",
+            "preco": 129.8360655737705,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "367",
+            "nome": "Amêndoa Defumada Torrada",
+            "descricao": "",
+            "preco": 147,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "243",
+            "nome": "Quebra Pedra",
+            "descricao": "",
+            "preco": 179.99999999999997,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "292",
+            "nome": "Alho Granulado Desidratado",
+            "descricao": "",
+            "preco": 80,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "424",
+            "nome": "Erva Doce Turca",
+            "descricao": "",
+            "preco": 98.05555555555556,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "487",
+            "nome": "BETERRABA FLOCOS DESIDRATADA",
+            "descricao": "",
+            "preco": 87.96296296296296,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "766",
+            "nome": "Drageado de Licor Cereja",
+            "descricao": "",
+            "preco": 155,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "744",
+            "nome": "Chips Batata Doce Rosada",
+            "descricao": "",
+            "preco": 120.00000000000001,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "393",
+            "nome": "Aroma de Fumaça",
+            "descricao": "",
+            "preco": 90,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "214",
+            "nome": "Erva de Santa Maria - Mentruz Granel",
+            "descricao": "",
+            "preco": 240.00000000000003,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "303",
+            "nome": "Folha de Boldo do Chile",
+            "descricao": "",
+            "preco": 160,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "341",
+            "nome": "Amêndoa Crua",
+            "descricao": "",
+            "preco": 139.03846153846155,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "502",
+            "nome": "Guaco Folha  (Mikania)",
+            "descricao": "",
+            "preco": 120.00000000000001,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "504",
+            "nome": "Cominho Puro",
+            "descricao": "",
+            "preco": 35,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "403",
+            "nome": "Goma Xantana",
+            "descricao": "",
+            "preco": 150,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "404",
+            "nome": "BALAS DE GELATINA CITRICA IMPORTADA (VARIOS SABORES)",
+            "descricao": "",
+            "preco": 85,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "418",
+            "nome": "Alho em pó",
+            "descricao": "",
+            "preco": 47.99999999999999,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "426",
+            "nome": "Farinha de Maracujá",
+            "descricao": "",
+            "preco": 39,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "444",
+            "nome": "TEMPERO BAIANO PREMIUM",
+            "descricao": "",
+            "preco": 99,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "459",
+            "nome": "Agar Agar (Gracilaria)",
+            "descricao": "",
+            "preco": 180,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "551",
+            "nome": "Creatina Monohidratado Granel",
+            "descricao": "",
+            "preco": 350,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "568",
+            "nome": "Levedura Nutricional Flocos Angels",
+            "descricao": "",
+            "preco": 240,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "614",
+            "nome": "Aroeira granel",
+            "descricao": "",
+            "preco": 50,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "700",
+            "nome": "Sucupira Sementes",
+            "descricao": "",
+            "preco": 90,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "916",
+            "nome": "Nozes Pecan Agridoce",
+            "descricao": "",
+            "preco": 198.99999999999997,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "323",
+            "nome": "Ana Maria Tempero Granel",
+            "descricao": "",
+            "preco": 68.97959183673468,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "835",
+            "nome": "Proteína Isolada de Soja 90% Granel",
+            "descricao": "",
+            "preco": 98.95833333333333,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "566",
+            "nome": "Pimenta Preta/Reino em Pó Pura",
+            "descricao": "",
+            "preco": 159.99999999999997,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "601",
+            "nome": "Pimenta Rosa em Grãos",
+            "descricao": "",
+            "preco": 150,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "313",
+            "nome": "Carqueja Amarga",
+            "descricao": "",
+            "preco": 45,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "405",
+            "nome": "Zatar",
+            "descricao": "",
+            "preco": 60,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "779",
+            "nome": "Pedra Ume Folha",
+            "descricao": "",
+            "preco": 68.04878048780488,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "232",
+            "nome": "BUCHINHA DO NORTE - GRANEL",
+            "descricao": "",
+            "preco": 500,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "326",
+            "nome": "Salsa em Flocos Desidratada",
+            "descricao": "",
+            "preco": 100,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "699",
+            "nome": "Snack Biscoito Arroz BBQ",
+            "descricao": "",
+            "preco": 150,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "277",
+            "nome": "Tomilho Flocos",
+            "descricao": "",
+            "preco": 50,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "556",
+            "nome": "Pimenta Preta em Grãos",
+            "descricao": "",
+            "preco": 170,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "637",
+            "nome": "Arruda",
+            "descricao": "",
+            "preco": 120.00000000000001,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "823",
+            "nome": "Maçã Desidratada em rodela",
+            "descricao": "",
+            "preco": 120,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "279",
+            "nome": "Unha de Gato Rasurada",
+            "descricao": "",
+            "preco": 84.0625,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "338",
+            "nome": "CENOURA DESIDRATADA",
+            "descricao": "",
+            "preco": 65,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "235",
+            "nome": "Tempero Edu Guedes",
+            "descricao": "",
+            "preco": 80,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "295",
+            "nome": "Pimenta Caiena em Pó",
+            "descricao": "",
+            "preco": 110,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "786",
+            "nome": "Melissa OFcinalis",
+            "descricao": "",
+            "preco": 120.00000000000001,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "289",
+            "nome": "Alho Frito Granel",
+            "descricao": "",
+            "preco": 68,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "315",
+            "nome": "Picão Preto Folha",
+            "descricao": "",
+            "preco": 100,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "445",
+            "nome": "Cebola em Pó",
+            "descricao": "",
+            "preco": 99.00000000000001,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "557",
+            "nome": "Colorau Colorífico",
+            "descricao": "",
+            "preco": 26.000000000000004,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "851",
+            "nome": "Alfazema Azul (Lavanda)",
+            "descricao": "",
+            "preco": 330,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "249",
+            "nome": "CHIMICHURRI DEFUMADO granel",
+            "descricao": "",
+            "preco": 120,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "792",
+            "nome": "Drageado Licor de Marula",
+            "descricao": "",
+            "preco": 160,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "216",
+            "nome": "Chimichurri c/ Pimenta Tempero Granel",
+            "descricao": "",
+            "preco": 100.00000000000001,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "240",
+            "nome": "Alcachofra Folha",
+            "descricao": "",
+            "preco": 130,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "365",
+            "nome": "LEITE DE COCO EM PO 100% PREMIUM - SANTO OLEO",
+            "descricao": "",
+            "preco": 218.99999999999997,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "368",
+            "nome": "Leite de Castanha de caju em po vegano - Elmar",
+            "descricao": "",
+            "preco": 170,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "519",
+            "nome": "TEMPERO SIRIO KG",
+            "descricao": "",
+            "preco": 130,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "593",
+            "nome": "Curry",
+            "descricao": "",
+            "preco": 35,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "742",
+            "nome": "Calêndula Flor Granel",
+            "descricao": "",
+            "preco": 190,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "300",
+            "nome": "Ora Pró Nobis folhas Granel",
+            "descricao": "",
+            "preco": 200,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "862",
+            "nome": "Poejo Folha",
+            "descricao": "",
+            "preco": 145,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "9062",
+            "nome": "LEMON SEM PIMENTA KG",
+            "descricao": "",
+            "preco": 98.95833333333333,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "291",
+            "nome": "Spirulina em Pó",
+            "descricao": "",
+            "preco": 200.00000000000003,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "730",
+            "nome": "Suspiro Granel",
+            "descricao": "",
+            "preco": 130,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "443",
+            "nome": "TEMPERO CEBOLA E TOMATE KG",
+            "descricao": "",
+            "preco": 109.99999999999999,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "228",
+            "nome": "Ervas Finas",
+            "descricao": "",
+            "preco": 100,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "824",
+            "nome": "Chips Provolone Desidratado",
+            "descricao": "",
+            "preco": 240,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "843",
+            "nome": "Jasmim Chá Granel",
+            "descricao": "",
+            "preco": 350,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        },
+        {
+            "codigo": "852",
+            "nome": "Rosas Rubra Gallica",
+            "descricao": "",
+            "preco": 330,
+            "unidade": "Kg",
+            "fragmentavel": "Sim"
+        }
     ]
-  }
-  
-  
+}

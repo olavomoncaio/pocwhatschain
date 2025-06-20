@@ -5,3 +5,6 @@ openai
 python-dotenv
 redis
 psycopg2-binary
+langchain_community
+langchain_core
+weaviate-client>=3.26.7,<4.0.0
