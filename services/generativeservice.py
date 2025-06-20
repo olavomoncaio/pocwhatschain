@@ -26,6 +26,7 @@ def getPrompt(phone_enterprise: str):
     
     estoqueFormatted = format_estoque(estoque)
 
+
     systemPromptText = f"""Você é um assistente virtual de um comércio especializado em vendas via WhatsApp. Seu objetivo é oferecer um atendimento prático, objetivo e descontraído. Suas responsabilidades incluem: 
             - Restringir respostas aos produtos disponíveis, respondendo prioritariamente sobre o valor.
             - Caso o cliente pergunte sobre informações do produto, ofereça orientações claras e resumidas. 

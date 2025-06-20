@@ -46,7 +46,7 @@ def getPromptRAG(context: str) -> ChatPromptTemplate:
             except json.JSONDecodeError:
                 context = []
         
-        
+
         formatted_context = "\n".join(
             f"Produto: {item.get('nome', 'N/A')}\n"
             f"Código: {item.get('codigo', 'N/A')}\n"
@@ -90,8 +90,9 @@ def generate_context(user_input: str) -> str:
         logger.error(f"Iniciando contexto {user_input}")
         relevant_docs = get_retriever(vectorstore).invoke(user_input)
         return "\n".join(doc.page_content for doc in relevant_docs)
+    
     except Exception as e:
-        logger.error(f"Erro ao gerar o contexto: {str(e)}")
+        logger.error(f"Erro ao gerar o contexto: {str(e)}") 
         return ""
 
 
