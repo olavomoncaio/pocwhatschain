@@ -2,7 +2,6 @@ import json
 from fastapi import APIRouter, Request
 from pydantic import BaseModel
 from typing import Optional
-# from services.generativeservice import general_response
 from services.generativeragservice import general_responseRAG
 from services.memorycacheasyncservice import get_key
 from services.whatsappservice import send_callback_whatsapp
