@@ -96,54 +96,29 @@ def generate_context(user_input: str) -> str:
         return ""
 
 
-## Chain com a implementação do RAG
 def chain_response(memory, llm, prompt, user_input):
-    try:
-        # logger.info(f"Iniciando chain_response")
-        # chat_history = memory.buffer if hasattr(memory, 'buffer') else [] # Isso já retorna a lista de HumanMessage/AIMessage
-        # chain = (
-        #     {"context": generate_context(user_input), "input": RunnablePassthrough(), "chat_history": lambda x: chat_history}  # Passa a lista diretamente
-        #     | prompt 
-        #     | llm
-        # )
-        # logger.info(f"Executando chain da string {user_input}")
-        # result = chain.invoke(user_input)
-        # logger.info(f"Iniciando save_Context")
-        # memory.save_context({"input": user_input}, {"output": result.content})
-
-        logger.info(f"Iniciando chain_response")
-        
-        # 1. Obter o histórico de chat corretamente
-        chat_history = memory.load_memory_variables({}).get('history', []) if hasattr(memory, 'load_memory_variables') else []
-        
-        # 2. Criar a chain com a estrutura correta
-        chain = (
-            {
-                "context": lambda x: generate_context(x["input"]),  # Função que recebe o input completo
-                "input": itemgetter("input"),  # Pega especificamente o campo input
-                "chat_history": itemgetter("chat_history")  # Pega especificamente o chat_history
-            }
-            | prompt
-            | llm
-        )
-        
-        logger.info(f"Executando chain da string {user_input}")
-        
-        # 3. Preparar os inputs no formato correto
-        inputs = {
-            "input": user_input,
-            "chat_history": chat_history
-        }
-        
-        result = chain.invoke(inputs)
-        
-        logger.info(f"Iniciando save_Context")
-        memory.save_context({"input": user_input}, {"output": result.content})
-
-    except Exception as e:
-        logger.error(f"Erro ao executar a cadeia de RAG: {str(e)}")
-        raise
-
+    chat_history = memory.buffer if hasattr(memory, 'buffer') else []
+    
+    # Criamos um dicionário com Runnables apropriados
+    input_dict = {
+        "context": lambda x: generate_context(x["input"]),
+        "input": RunnablePassthrough(),
+        "chat_history": lambda x: chat_history
+    }
+    
+    # Construímos a chain corretamente
+    chain = (
+        input_dict
+        | prompt
+        | llm
+    )
+    
+    # Executa a chain
+    result = chain.invoke({"input": user_input})
+    
+    # Atualiza a memória
+    memory.save_context({"input": user_input}, {"output": result.content})
+    
     return result.content
 
 
@@ -151,6 +126,7 @@ def chain_response(memory, llm, prompt, user_input):
 def general_responseRAG(client_id: str, user_input: str, phone_enterprise: str):
     llm = ChatOpenAI(model="gpt-4.1", temperature=0.5)
     memory = get_memory_by_id(client_id) 
+    logger.info(f"Memória obtida {memory}")
     context = generate_context(user_input)
     prompt=getPromptRAG(context)
     logger.info(f"finalizando getPromptRAG")
